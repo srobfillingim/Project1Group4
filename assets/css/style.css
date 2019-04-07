@@ -11,7 +11,7 @@
     border: 0;
 }
 
-footer {
+.page-footer {
     background-color: #666666;
     text-align: center;
     position: fixed;
@@ -19,7 +19,8 @@ footer {
     bottom: 0%;
     left: 0%;
     right: 0%;
-    border-top: 10px solid #4aaaa5;
+    flex: 1 0 auto;
+
 }
 .footer p {
     position: absolute;
@@ -28,3 +29,29 @@ footer {
     right: 35%;
     color: #ffffff;
 }
+
+.featured-body #crossroads {
+    height: 75px;
+    width: 200px;
+}
+
+.container {
+    margin-bottom: 50%;
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: #0288d1;
+  }
+
+  .btn, .btn-large, .btn-small {
+    background-color: #0288d1;
+  }
+
+  .btn:hover, .btn-large:hover, .btn-small:hover {
+    background-color: #03a9f4;
+  }
+
+  .btn:focus, .btn-large:focus, .btn-small:focus,
+  .btn-floating:focus {
+    background-color: #01579b;
+  }
