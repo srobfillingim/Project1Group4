@@ -14,49 +14,81 @@
 </head>
 <!-- Navbar goes here -->
 <nav>
-  <div class="nav-wrapper">
+  <div class="nav-wrapper grey darken-4">
     <a href="#!" class="brand-logo"><i class="material-icons">audiotrack</i>KC HotSpot</a>
     <ul class="right hide-on-med-and-down">
       <li><a href="index.html"><i class="material-icons">home</i></a></li>
       <li><a href="genre.html"><i class="material-icons">headset</i></a></li>
-      <li><a href="location.html"><i class="material-icons">directions_car</i></a></li>
+      <li><a href="location.html"><i class="material-icons">map</i></a></li>
       <li><a href="#"><i class="material-icons">event</i></a></li>
     </ul>
   </div>
 </nav>
 
 <body>
-    
-  <div class="container">
     <!-- Page Content goes here -->
     <div class="row">
-      <div class="col s9">Carousel
-          <div class="carousel">
-              <a class="carousel-item" href="#one!"><img src="assets/images/ClassicalMusic.jpg"></a>
-              <a class="carousel-item" href="#two!"><img src="assets/images/BlueJazz.jpg"></a>
-              <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
-              <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
-              <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
-          </div>
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="assets/images/ClassicalMusicGenre.jpg"></a>
+            <div class="caption center-align">
+              <h3>Classical Music</h3>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/JazzBluesGenre.jpeg"></a>
+            <div class="caption center-align">
+              <h3>Blues/Jazz</h3>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/CountryBlueGrassGenre.jpg"></a>
+              <div class="caption center-align">
+                <h3>Country/Blue Grass</h3>
+              </div>
+          </li>
+          <li>
+            <img src="assets/images/HipHopGenre.jpg"></a>
+              <div class="caption center-align">
+                <h3>Hip Hop/Rap</h3>
+              </div>
+          </li>
+          <li>
+            <img src="assets/images/AlternativeIndieGenre.jpg"></a>
+              <div class="caption center-align">
+                <h3>Alternative/Indie</h3>
+              </div>
+          </li>
+        </ul>
       </div>
-      <div class="col s3">Drop Down Menu
+      </div>
+      <div class="row center-align">
           <!-- Dropdown Trigger -->
-          <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Venue Information</a>
+          <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>See All Genres</a>
               <!-- Dropdown Structure -->
               <ul id='dropdown1' class='dropdown-content'>
                 <li><a href="#!">Pop</a></li>
                 <li><a href="#!">Country/Blue Grass</a></li>
-                <li><a href="#!">Alternative</a></li>
+                <li><a href="#!">Alternative/Indie</a></li>
                 <li><a href="#!">Blues/Jazz</a></li>
-                <li><a href="#!">Hip Hip</a></li>
+                <li><a href="#!">Hip Hop</a></li>
                 <li><a href="#!">Classical</li>
               </ul>
         </div>
     </div>
   </div>
-  
+
+<!-- Footer goes here -->
+<footer class="page-footer">
+  <p>Copyright © 2019</p>
+</footer>
+ 
+<!-- jQuery JS -->
+<script src="https://code.jquery.com/jquery.js"></script>
 <!--JavaScript at end of body for optimized loading-->
 <script type="text/javascript" src="assets/javascript/materialize.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
 
 </body>
 
