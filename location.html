@@ -14,6 +14,7 @@
 </head>
 
 <!-- Navbar goes here -->
+<div class="navbar-fixed">
 <nav>
   <div class="nav-wrapper grey darken-4">
     <a href="index.html" class="brand-logo"><i class="material-icons">audiotrack</i>KC HotSpot</a>
@@ -22,17 +23,17 @@
       <li><a href="genre.html"><i class="material-icons">headset</i></a></li>
       <li><a href="location.html"><i class="material-icons">map</i></a></li>
       <li><a href="#"><i class="material-icons">event</i></a></li>
-      <!-- <li class="input-field"><input id="search" type="search" required><label class="label-icon" for="search"><i class="material-icons">search</i></label><i class="tiny material-icons">close</i> -->
-  
+      <li class="input-field"><input id="search" type="search" required><label class="label-icon" for="search"><i class="material-icons">search</i></label><i class="tiny material-icons">close</i>
     </ul>
     
   </div>
 </nav>
+</div>
 
 <body>
-    <!-- Page Content goes here -->
+    <!-- Hero Slider -->
     <div class="row">
-    <div class="slider">
+    <div class="slider" id="location-slider">
         <ul class="slides">
           <li>
             <img src="assets/images/Westport.jpg">
@@ -79,8 +80,8 @@
         </ul>
       </div>
       </div>
-    
-  <div class="container">
+    <!-- Featured Venues -->
+  <div class="contain">
       <div class="row featured-header">
           <div class="col s12 center-align">
             <h5>Featured Venues</h5>
@@ -93,7 +94,7 @@
         <li class="col s6 m2 offset-m1"><a href="https://www.providenceamp.com/about-the-venue.html" target="_blank"><img src="assets/images/providence-logo.jpg" alt="Providence Medical Amphitheater" class="responsive-img"></a></li>
       </ul>
       
-      <div class="row center-align">
+      <div class="row center-align" id="venue-dropdown">
           <a class='dropdown-button btn' href='#' data-activates='dropdown1'>See All Venues</a>
           <ul id='dropdown1' class='dropdown-content'>
               <li class="divider"><a href="#!">Westport</a></li>
@@ -105,6 +106,129 @@
             </ul>
 
       </div>
+      <hr>
+<!-- Genre Section -->
+<div class="row">
+  <div class="col s12 m6 center-align">
+      <h5>Local Artists</h5>
+  </div>
+  <div class="col s12 m6">
+    <div class="slider" id="genre-slider">
+        <ul class="slides">
+          <li>
+            <img src="assets/images/AlternativeIndieGenre.jpg">
+            <div class="caption left-align">
+              <h3>Genre Name</h3>
+              <a class="btn" href="#" target="_blank"><i class="material-icons left light grey-text text-lighten-3">album</i>More Info</a>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/ClassicalMusicGenre.jpg">
+            <div class="caption left-align">
+              <h3>Genre Name</h3>
+              <a class="btn" href="#" target="_blank"><i class="material-icons left light grey-text text-lighten-3">album</i>More Info</a>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/CountryBlueGrassGenre.jpg">
+            <div class="caption left-align">
+              <h3>Genre Name</h3>
+              <a class="btn" href="#" target="_blank"><i class="material-icons left light grey-text text-lighten-3">album</i>More Info</a>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/HipHopGenre.jpg">
+            <div class="caption left-align">
+              <h3>Genre Name</h3>
+              <a class="btn" href="#" target="_blank"><i class="material-icons left light grey-text text-lighten-3">album</i>More Info</a>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/JazzBluesGenre.jpeg">
+            <div class="caption left-align">
+              <h3>Genre Name</h3>
+              <a class="btn" href="#" target="_blank"><i class="material-icons left light grey-text text-lighten-3">album</i>More Info</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      </div>
+  </div>
+      <hr>
+<!-- Results Section -->
+      <div class="row results-header">
+          <div class="col s12 center-align">
+            <h5>Upcoming Events</h5>
+          </div>
+      </div>
+      <div class="row results-body">
+        <div class="col s6 m4">
+          <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/images/HipHopGenre.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Tech N9ne<i class="material-icons right">more_vert</i></span>
+                <p>Date & Time</p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Event Details</span>
+                <br>
+                <p>Artist Name</p>
+                <p>Date & Time</p>
+                <p>Venue | Address</p>
+                <p>Description</p>
+                <br>
+                <a class="waves-effect waves-light btn">Buy Tickets</a>
+              </div>
+          </div>
+        </div>
+        <div class="col s6 m4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="assets/images/HipHopGenre.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Tech N9ne<i class="material-icons right">more_vert</i></span>
+                  <p>Date & Time</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Event Details</span>
+                  <br>
+                  <p>Artist Name</p>
+                  <p>Date & Time</p>
+                  <p>Venue | Address</p>
+                  <p>Description</p>
+                  <br>
+                  <a class="waves-effect waves-light btn">Buy Tickets</a>
+                </div>
+            </div>
+          </div>
+          <div class="col s6 m4">
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="assets/images/HipHopGenre.jpg">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Tech N9ne<i class="material-icons right">more_vert</i></span>
+                    <p>Date & Time</p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Event Details</span>
+                    <br>
+                    <p>Artist Name</p>
+                    <p>Date & Time</p>
+                    <p>Venue | Address</p>
+                    <p>Description</p>
+                    <br>
+                    <a class="waves-effect waves-light btn">Buy Tickets</a>
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+        
+
 
   </div>
 
