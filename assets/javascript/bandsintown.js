@@ -1,32 +1,34 @@
 // $(document).ready(function() {
+    
+    // Function to re-renders the HTML to display the appropriate content
 
-    
-    
-    function getEvents(city="kansas city"){
-    
-        var queryURL = `https://app.ticketmaster.com/discovery/v2/events.json?city=${city}&apikey=vnnOldOossqCwb17Oq4wA0TfYfmlmWAa`;
+    function getArtistEvents(artist){
+        if(!artist) return;
+        var queryURL = `https://rest.bandsintown.com/artists/${artist}/events?app_id=KCHotSpot`;
         return $.ajax({
             url: queryURL,
             method: "GET"
- 
-        });
+        })
     }
     
-
-
-    // Function to re-renders the HTML to display the appropriate content
-
-    
+    function getArtist(artist){
+        if(!artist) return;
+        var queryURL = `https://rest.bandsintown.com/artists/${artist}?app_id=KCHotSpot`;
+        return $.ajax({
+            url: queryURL,
+            method: "GET"
+        })
+    }
     
     // Create AJAX Call for concert information
     
     // $.ajax({
-    //     url: queryGenreURL,
+    //     url: queryURL,
     //     method: "GET"
     // }).then(function(response) {
     //     console.log(response)
 
-       // var results = response._embedded.events
+        // var results = response._embedded.events
 
         // console.log(results);
 
@@ -39,20 +41,9 @@
         //       var genre = $("<td>").text(genreResults[j].genre.name);
         //       tRow.append(date, artist, genre);
         //       $("tbody").append(tRow);
-        //     }
-        // }
+           
+        // });
         
 
 
-
-
     // });
-    
-
- 
-    
-    
-    
-    
-    
-// });
