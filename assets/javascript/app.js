@@ -15,9 +15,16 @@ $(document).ready(function(){
     // Location page JS
     $('.slider').slider();
 
+//AUDIO & CAPTION VARIABLES & FUNCTIONS
+
+$("#playButton1").on("click", function() {
+  $("#songPreview1").get(0).play();
+});
 
 
 
+
+//API FUNCTIONS
 
   var bands = {};
 
