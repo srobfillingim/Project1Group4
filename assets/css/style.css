@@ -55,3 +55,6 @@
   .btn-floating:focus {
     background-color: #01579b;
   }
+  .modal.bottom-sheet {
+      max-height: 90%;
+  }
