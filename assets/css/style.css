@@ -43,7 +43,12 @@
   .btn-floating:focus {
     background-color: #01579b;
   }
-
+/* <<<<<<< genre-section-branch
+  .modal.bottom-sheet {
+      max-height: 90%;
+  }
+=======
+ */
   hr {
     border: 1px solid #e0e0e0;
   }

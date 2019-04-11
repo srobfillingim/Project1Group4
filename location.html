@@ -21,9 +21,11 @@
     <a href="index.html"><img src="assets/images/musicfinderlogo.png" width="50px" id="logo"></a>
     <a href="index.html" class="brand-logo">KC hotSpot</a>
     <ul class="right hide-on-med-and-down">
+
       <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
       <li><a href="genre.html"><i class="material-icons left">music_note</i>Genre</a></li>
       <li><a href="location.html"><i class="material-icons left">location_city</i>Venues</a></li>
+
       <li class="input-field"><input id="search" type="search" required><label class="label-icon" for="search"><i class="material-icons">search</i></label><i class="tiny material-icons">close</i>
     </ul>
     
@@ -32,6 +34,7 @@
 </div>
 
 <body>
+
 
   <div class="hero-image">
   <div class="hero-text">
@@ -186,10 +189,284 @@
 
 <!-- Results Section -->
       <div class="row results-header">
+
           <div class="col s12 center-align">
             <h5>Suggested Events</h5>
           </div>
       </div>
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content left-align">
+      <h4>Venues</h4>
+      <h5>Westport Area</h5>
+      <ul class="collection">
+        <li class="collection-item avatar">
+            
+          <img src="../Project1Group4/assets/images/Westport.jpg" alt class="circle" width="70px" height="70px">
+          <span class="title"><h6>The Madrid Theatre</h6></span>
+          <!-----<a href="https://www.madridtheatre.com/" class="secondary-content"><i class="material-icons">insert_link</i></a>--->
+          <a href="https://www.madridtheatre.com/" class="waves-effect waves-light btn secondary-content">See Events</a>
+          <p class="contents">Address: 3810 Main St, Kansas City, MO 64111
+              <a href="https://www.google.com/maps/place/Madrid+Theatre/@39.0580241,-94.5883604,17z/data=!3m1!4b1!4m5!3m4!1s0x87c0efdc39b7b363:0x8f32932e540ad004!8m2!3d39.0580241!4d-94.5861717"target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a>
+            <br>
+            Hours: Closes 9PM
+            <br>
+            Phone: (816) 753-8880
+          </p>
+        </li>
+
+        <br>
+       
+       <li class="collection-item avatar">
+          <img src="../Project1Group4/assets/images/Westport.jpg" alt class="circle" width="50px" height="50px">
+          <span class="title"><h6>miniBar</h6></span>
+          <a href="https://www.minibarkc.com/" class="waves-effect waves-light btn secondary-content">See Events</a>
+          <p class="contents">4048 Broadway St, Kansas City, MO 64111 
+              <a href="https://www.google.com/maps/place/miniBar/@39.0575695,-94.5932467,16.8z/data=!4m5!3m4!1s0x87c0efdbb4de36c3:0xd648876811fa81c!8m2!3d39.0576051!4d-94.5909778"target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a>
+            <br>
+            Hours: Closes 3AM
+            <br>
+            Phone: (816) 326-8281
+          </p>
+        </li>
+
+        <br>
+
+        <li class="collection-item avatar">
+            <img src="../Project1Group4/assets/images/Westport.jpg" alt class="circle" width="50px" height="50px">
+            <span class="title"><h6>Uptown Theater</h6></span>
+            <!-----<a href="http://theriotroom.com/" class="secondary-content"><i class="material-icons">insert_link</i></a>--->
+            <a href="http://www.uptowntheater.com/home.html" class="waves-effect waves-light btn secondary-content">See Events</a>
+            <p class="contents">Address: 3700 Broadway Blvd, Kansas City, MO 64111
+              
+                <a href="https://www.google.com/maps/place/Uptown+Theater/@39.0611734,-94.5929158,17z/data=!3m1!4b1!4m5!3m4!1s0x87c0efd90700de9b:0xbc03632641865a1!8m2!3d39.0611734!4d-94.5907271"target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a>
+              <br>
+              Phone: (816) 753-8665
+              <br>
+            </p>
+          </li>
+
+          <br>
+
+          <li class="collection-item avatar">
+              <img src="../Project1Group4/assets/images/Westport.jpg" alt class="circle" width="50px" height="50px">
+              <span class="title"><h6>The Riot Room</h6></span>
+              <!-----<a href="http://theriotroom.com/" class="secondary-content"><i class="material-icons">insert_link</i></a>--->
+              <a href="http://theriotroom.com/" class="waves-effect waves-light btn secondary-content">See Events</a>
+              <p class="contents">Address: 4048 Broadway St, Kansas City, MO 64111
+                  <a href="https://www.google.com/maps/place/The+Riot+Room/@39.0535186,-94.5931398,17z/data=!3m1!4b1!4m5!3m4!1s0x87c0efc4d5efc1ff:0x5b2607b059a0a595!8m2!3d39.0535186!4d-94.5909511"target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a>
+                <br>
+                Hours: Closes 3AM
+                <br>
+                Phone: (816) 442-8179
+              </p>
+            </li>
+
+            <br>
+
+       <h5>Downtown/Power & Light</h5>
+       <li class="collection-item avatar">
+          <img src="../Project1Group4/assets/images/PowerandLight.jpg" alt class="circle" width="50px" height="50px">
+          <span class="title"><h6>The Truman</h6></span>
+          <a href="https://www.thetrumankc.com/" class="waves-effect waves-light btn secondary-content">See Events</a>
+          <p class="contents">Address: 601 E Truman Rd, Kansas City, MO 64106
+              <a href="https://www.google.com/maps/place/The+Truman/@39.0940543,-94.5822491,15.05z/data=!4m5!3m4!1s0x87c0f06f6fa40e3b:0x31f5ae1ad4c327a3!8m2!3d39.0952226!4d-94.5763006" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a>
+            <br>
+            Phone: (816) 205-8560
+            <br>
+          </p>
+        </li>
+
+        <br>
+       
+       <li class="collection-item avatar">
+          <img src="../Project1Group4/assets/images/PowerandLight.jpg" alt class="circle" width="50px" height="50px">
+          <span class="title"><h6>Arvest Bank Theatre at the Midland</h6></span>
+          <!-----<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>--->
+          <a href="https://www.arvestbanktheatre.com/" class="waves-effect waves-light btn secondary-content">See Events</a>
+          <p class="contents">1228 Main St Kansas City, MO 64105
+              <a href="https://www.google.com/maps/place/The+Midland/@39.0988538,-94.5856403,17z/data=!4m12!1m6!3m5!1s0x87c0f05d0a2d0b93:0x9192c1ca543a7c06!2sThe+Midland!8m2!3d39.0988538!4d-94.5834516!3m4!1s0x87c0f05d0a2d0b93:0x9192c1ca543a7c06!8m2!3d39.0988538!4d-94.5834516" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a>
+            <br>
+            Phone: (816) 283-9900
+            <br>
+          </p>
+        </li>
+
+        <br>
+
+        <li class="collection-item avatar">
+            <img src="../Project1Group4/assets/images/PowerandLight.jpg" alt class="circle" width="50px" height="50px">
+            <span class="title"><h6>KC Live!</h6></span>
+            <!-----<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>--->
+            <a href="http://www.powerandlightdistrict.com/eat-and-drink/kc-live" class="waves-effect waves-light btn secondary-content">See Events</a>
+            <p class="contents">13 Grand Blvd Kansas City, MO 64106
+                <a href="https://www.google.com/maps/place/KC+Live!/@39.0978079,-94.5838095,17z/data=!3m2!4b1!5s0x87c0f067a31efb91:0x7edf0a3afffc80e5!4m5!3m4!1s0x87c0f067a328031d:0x5e75c741881034a1!8m2!3d39.0978079!4d-94.5816208" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a>
+              <br>
+              Phone: (816) 842-1045
+              <br>
+            </p>
+          </li>
+
+          <br>
+
+          <li class="collection-item avatar">
+              <img src="../Project1Group4/assets/images/PowerandLight.jpg" alt class="circle" width="50px" height="50px">
+              <span class="title"><h6>Sprint Center</h6></span>
+              <!-----<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>--->
+              <a href="https://www.sprintcenter.com/" class="waves-effect waves-light btn secondary-content">See Events</a>
+              <p class="contents">1407 Grand Blvd, Kansas City, MO 64106
+                  <a href="https://www.google.com/maps/place/Sprint+Center/@39.097859,-94.5861113,15.97z/data=!4m8!1m2!2m1!1ssprint+center+parking!3m4!1s0x87c0f067bf6d7d8b:0xacb63f3a8adefd44!8m2!3d39.0972993!4d-94.5799389" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a>
+                <br>
+                Phone: (816) 949-7100
+                <br>
+              </p>
+            </li>
+
+            <br>
+
+            <li class="collection-item avatar">
+                <img src="../Project1Group4/assets/images/PowerandLight.jpg" alt class="circle" width="50px" height="50px">
+                <span class="title"><h6>Voodoo Lounge</h6></span>
+                <!-----<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>--->
+                <a href="https://www.caesars.com/harrahs-kansas-city/events/voodoo_calendar?utm_campaign=GMB&utm_source=google&utm_medium=local&utm_term=VooDooLounge&utm_content=Entertainment" class="waves-effect waves-light btn secondary-content">See Events</a>
+                <p class="contents">Harrah's, One Riverboat Dr, North Kansas City, MO 64116
+                    <a href="https://www.google.com/maps/place/VooDoo+Lounge/@39.1421194,-94.5466229,17z/data=!3m1!4b1!4m5!3m4!1s0x87c0fa191ab4a61f:0x9ac84ba164b64e64!8m2!3d39.1421194!4d-94.5444342" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a>
+                  <br>
+                  Phone: (816) 472-7777
+                  <br>
+                </p>
+              </li>
+
+              <br>
+
+            <h5>Crossroads</h5>
+            <li class="collection-item avatar">
+                <img src="../Project1Group4/assets/images/CrossroadsKC.jpg" alt class="circle" width="50px" height="50px">
+                <span class="title"><h6>Crossroads KC</h6></span>
+                <!-----<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>--->
+                <a href="https://crossroadskc.com/" class="waves-effect waves-light btn secondary-content">See Events</a>
+                <p class="contents">417 E 18th St, Kansas City, MO 64108
+                    <a href="https://www.google.com/maps/place/CrossroadsKC/@39.0929402,-94.5831442,15.27z/data=!4m5!3m4!1s0x87c0f0694dd50c65:0x67c657cf23d1d7e3!8m2!3d39.0914267!4d-94.5781206" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a>
+                  <br>
+                  Phone: (785) 749-3434
+                  <br>
+                </p>
+              </li>
+
+              <br>
+
+              <li class="collection-item avatar">
+                  <img src="../Project1Group4/assets/images/CrossroadsKC.jpg" alt class="circle" width="50px" height="50px">
+                  <span class="title"><h6>recordBar</h6></span>
+                  <!-----<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>--->
+                  <a href="https://therecordbar.com/" class="waves-effect waves-light btn secondary-content">See Events</a>
+                  <p class="contents">1520 Grand Blvd, Kansas City, MO 64108
+                      <a href="https://www.google.com/maps/place/recordBar/@39.0952925,-94.5843934,16.1z/data=!4m5!3m4!1s0x87c0efcc31a4747d:0xdb8d5a06f4cbe29e!8m2!3d39.0950113!4d-94.5815357" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a>
+                    <br>
+                    Phone: (816) 753-5207
+                    <br>
+                  </p>
+                </li>
+
+                <br>
+
+                <li class="collection-item avatar">
+                    <img src="../Project1Group4/assets/images/CrossroadsKC.jpg" alt class="circle" width="50px" height="50px">
+                    <span class="title"><h6>Green Lady Lounge</h6></span>
+                    <!-----<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>--->
+                    <a href="https://greenladylounge.com/" class="waves-effect waves-light btn secondary-content">See Events</a>
+                    <p class="contents">1809 Grand Blvd, Kansas City, MO 64108
+                        <a href="https://www.google.com/maps/place/Green+Lady+Lounge/@39.0913706,-94.5833463,17z/data=!3m1!4b1!4m5!3m4!1s0x87c0f0699009370b:0xea8622440da3619!8m2!3d39.0913706!4d-94.5811576" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a>
+                      <br>
+                      Phone: (816) 215-2954
+                      <br>
+                    </p>
+                  </li>
+
+                  <br>
+
+                <h5>Kansas City MO</h5>
+                <li class="collection-item avatar">
+                    <img src="../Project1Group4/assets/images/StarlightKC.jpg" alt class="circle" width="50px" height="50px">
+                    <span class="title"><h6>Starlight Theatre</h6></span>
+                    <!-----<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>--->
+                    <a href="https://www.kcstarlight.com/" class="waves-effect waves-light btn secondary-content">See Events</a>
+                    <p class="contents">4600 Starlight Rd, Kansas City, MO 64132
+                        <a href="https://www.google.com/maps/place/recordBar/@39.0952925,-94.5843934,16.1z/data=!4m5!3m4!1s0x87c0efcc31a4747d:0xdb8d5a06f4cbe29e!8m2!3d39.0950113!4d-94.5815357" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a>
+                      <br>
+                      Phone: (816) 363-7827
+                      <br>
+                    </p>
+                  </li>
+
+                  <br>
+
+                <h5>Overland Park KS</h5>
+                <li class="collection-item avatar">
+                    <img src="../Project1Group4/assets/images/mic-bw.jpg" alt class="circle" width="50px" height="50px">
+                    <span class="title"><h6>One Block South</h6></span>
+                    <!-----<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>--->
+                    <a href="https://do816.com/oneblocksouth" class="waves-effect waves-light btn secondary-content">See Events</a>
+                    <p class="contents">7300 W 119th St, Overland Park, KS 66213
+                        <a href="https://www.google.com/maps/place/One+Block+South/@38.9157784,-94.6739024,17z/data=!3m1!4b1!4m5!3m4!1s0x87c0ea6a320b357f:0x3d85177195b03567!8m2!3d38.9157784!4d-94.6717137" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a>
+                      <br>
+                      Phone: (913) 451-0444
+                      <br>
+                    </p>
+                  </li>
+
+                  <br>
+                
+                <h5>Lawrence KS</h5>
+                <li class="collection-item avatar">
+                    <img src="../Project1Group4/assets/images/crowd.jpg" alt class="circle" width="50px" height="50px">
+                    <span class="title"><h6>The Granada</h6></span>
+                    <!-----<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>--->
+                    <a href="https://thegranada.com/" class="waves-effect waves-light btn secondary-content">See Events</a>
+                    <p class="contents">1020 Massachusetts St, Lawrence, KS 66044
+                        <a href="https://www.google.com/maps/place/The+Granada/@38.9648436,-95.237906,17z/data=!3m1!4b1!4m5!3m4!1s0x87bf6f5aa2882bd9:0x656f321a56b95c72!8m2!3d38.9648436!4d-95.2357173" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a>
+                      <br>
+                      Phone: (785) 842-1390
+                      <br>
+                    </p>
+                  </li>
+    
+                  <br>
+
+                  <li class="collection-item avatar">
+                      <img src="../Project1Group4/assets/images/crowd.jpg" alt class="circle" width="50px" height="50px">
+                      <span class="title"><h6>The Bottleneck</h6></span>
+                      <!-----<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>--->
+                      <a href="http://thebottlenecklive.com/" class="waves-effect waves-light btn secondary-content">See Events</a>
+                      <p class="contents">737 New Hampshire St, Lawrence, KS 66044
+                          <a href="https://www.google.com/maps/place/The+Bottleneck/@38.969884,-95.2370597,17z/data=!3m1!4b1!4m5!3m4!1s0x87bf6f5c84085ea5:0xd8e10f01967c50f2!8m2!3d38.969884!4d-95.234871" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a>
+                        <br>
+                        Phone: (785) 841-5483
+                        <br>
+                      </p>
+                    </li>
+                    
+                    <br>
+      </ul>
+      
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+</div>  
+          <!-----<a class='dropdown-button btn' href='#' data-activates='dropdown1'>See All Venues</a>
+          <ul id='dropdown1' class='dropdown-content'>
+              <li class="divider"><a href="#!">Westport</a></li>
+              <li class="divider"><a href="#!">West Bottoms</a></li>
+              <li class="divider"><a href="#!">Swope Park</a></li>
+              <li class="divider"><a href="#!">Power & Light District</a></li>
+              <li class="divider"><a href="#!">Country Club Plaza</a></li>
+              <li class="divider"><a href="#!">Crossroads</a></li>
+            </ul>---->
+
       <div class="row results-body">
         <div class="col s6 m4">
           <div class="card">
@@ -258,7 +535,133 @@
               </div>
           </div>
           
+
       </div>
+      <hr>
+<!-- Genre Section -->
+<div class="row">
+  <div class="col s12 m6 center-align">
+      <h5>Local Artists</h5>
+  </div>
+  <div class="col s12 m6">
+    <div class="slider" id="genre-slider">
+        <ul class="slides">
+          <li>
+            <img src="assets/images/AlternativeIndieGenre.jpg">
+            <div class="caption left-align">
+              <h3>Genre Name</h3>
+              <a class="btn" href="#" target="_blank"><i class="material-icons left light grey-text text-lighten-3">album</i>More Info</a>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/ClassicalMusicGenre.jpg">
+            <div class="caption left-align">
+              <h3>Genre Name</h3>
+              <a class="btn" href="#" target="_blank"><i class="material-icons left light grey-text text-lighten-3">album</i>More Info</a>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/CountryBlueGrassGenre.jpg">
+            <div class="caption left-align">
+              <h3>Genre Name</h3>
+              <a class="btn" href="#" target="_blank"><i class="material-icons left light grey-text text-lighten-3">album</i>More Info</a>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/HipHopGenre.jpg">
+            <div class="caption left-align">
+              <h3>Genre Name</h3>
+              <a class="btn" href="#" target="_blank"><i class="material-icons left light grey-text text-lighten-3">album</i>More Info</a>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/JazzBluesGenre.jpeg">
+            <div class="caption left-align">
+              <h3>Genre Name</h3>
+              <a class="btn" href="#" target="_blank"><i class="material-icons left light grey-text text-lighten-3">album</i>More Info</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      </div>
+  </div>
+      <hr>
+<!-- Results Section -->
+      <div class="row results-header">
+          <div class="col s12 center-align">
+            <h5>Upcoming Events</h5>
+          </div>
+      </div>
+      <div class="row results-body">
+        <div class="col s6 m4">
+          <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/images/HipHopGenre.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Tech N9ne<i class="material-icons right">more_vert</i></span>
+                <p>Date & Time</p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Event Details</span>
+                <br>
+                <p>Artist Name</p>
+                <p>Date & Time</p>
+                <p>Venue | Address</p>
+                <p>Description</p>
+                <br>
+                <a class="waves-effect waves-light btn">Buy Tickets</a>
+              </div>
+          </div>
+        </div>
+        <div class="col s6 m4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="assets/images/HipHopGenre.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Tech N9ne<i class="material-icons right">more_vert</i></span>
+                  <p>Date & Time</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Event Details</span>
+                  <br>
+                  <p>Artist Name</p>
+                  <p>Date & Time</p>
+                  <p>Venue | Address</p>
+                  <p>Description</p>
+                  <br>
+                  <a class="waves-effect waves-light btn">Buy Tickets</a>
+                </div>
+            </div>
+          </div>
+          <div class="col s6 m4">
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="assets/images/HipHopGenre.jpg">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Tech N9ne<i class="material-icons right">more_vert</i></span>
+                    <p>Date & Time</p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Event Details</span>
+                    <br>
+                    <p>Artist Name</p>
+                    <p>Date & Time</p>
+                    <p>Venue | Address</p>
+                    <p>Description</p>
+                    <br>
+                    <a class="waves-effect waves-light btn">Buy Tickets</a>
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+
+      <div id="musicEvents"></div>
+        
+
 
       <div id="musicEvents"></div>
         
@@ -276,37 +679,17 @@
 <!--JavaScript at end of body for optimized loading-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="assets/javascript/materialize.js"></script>
-<!-- <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+<script type="text/javascript" src="assets/javascript/app.js"></script>
 <script type="text/javascript" src="assets/javascript/bandsintown.js"></script>
-<script type="text/javascript" src="assets/javascript/tmasterAPI.js"></script> -->
+<script type="text/javascript" src="assets/javascript/tmasterAPI.js"></script>
+
+
 <script type="text/javascript">
 
- // Create AJAX Call for venue information
-// //  var queryGenreURL = "https://app.ticketmaster.com/discovery/v2/venues.json?stateCode=MO,KS&apikey=vnnOldOossqCwb17Oq4wA0TfYfmlmWAa";
-// var queryVenueURL = "https://rest.bandsintown.com/venue/${city}events?app_id=KCHotSpot"
 
-// $.ajax({
-//   url: queryGenreURL,
-//   method: "GET"
-// }).then(function(response) {
-//   console.log(response)
-
-//  var results = response.venue
-
-//   console.log(results);
-
-//   for (var i = 0; i < results.length; i++) {
-//       var tRow = $("<tr>");
-//       var name = $("<td>").text(results[i].name);
-//       // var address = $("<td>").text(results[i].address.line1);
-//       var city = $("<td>").text(results[i].city);
-//       // var state = $("<td>").text(results[i].state.stateCode);
-//         tRow.append(venue, address, city, state);
-//         $("tbody").append(tRow);
-//   }
-  
-// });
 </script>
+
 
 </body>
 </html>
