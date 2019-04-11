@@ -4,25 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" type="image/png" href="assets/images/musicfinderlogo.png">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="assets/css/reset.css">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="assets/css/materialize.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="assets/css/style.css">
-    <title>Location</title>
+    <title>Location | KC hotSpot</title>
 </head>
 
 <!-- Navbar goes here -->
 <div class="navbar-fixed">
 <nav>
   <div class="nav-wrapper grey darken-4">
-    <a href="index.html" class="brand-logo"><i class="material-icons">audiotrack</i>KC HotSpot</a>
+    <a href="index.html"><img src="assets/images/musicfinderlogo.png" width="50px" id="logo"></a>
+    <a href="index.html" class="brand-logo">KC hotSpot</a>
     <ul class="right hide-on-med-and-down">
-      <li><a href="index.html"><i class="material-icons">home</i></a></li>
-      <li><a href="genre.html"><i class="material-icons">headset</i></a></li>
-      <li><a href="location.html"><i class="material-icons">map</i></a></li>
-      <li><a href="#"><i class="material-icons">event</i></a></li>
+      <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+      <li><a href="genre.html"><i class="material-icons left">music_note</i>Genre</a></li>
+      <li><a href="location.html"><i class="material-icons left">location_city</i>Venues</a></li>
       <li class="input-field"><input id="search" type="search" required><label class="label-icon" for="search"><i class="material-icons">search</i></label><i class="tiny material-icons">close</i>
     </ul>
     
@@ -31,134 +32,162 @@
 </div>
 
 <body>
-    <!-- Hero Slider -->
-    <div class="row">
-    <div class="slider" id="location-slider">
-        <ul class="slides">
-          <li>
-            <img src="assets/images/Westport.jpg">
-            <div class="caption center-align">
-              <h3>Westport</h3>
-              <a href="https://www.google.com/maps/place/Old+Westport,+Kansas+City,+MO+64111/@39.0531549,-94.5967608,16z/data=!3m1!4b1!4m5!3m4!1s0x87c0efc548a666a7:0x1aee77508fea2e90!8m2!3d39.0524993!4d-94.5921098" target="_blank"><i class="medium material-icons light grey-text text-lighten-3">directions</i><h5 class="light grey-text text-lighten-3">See on Map</h5></a>
-            </div>
-          </li>
-          <li>
-            <img src="assets/images/WestBottomsKC.jpg">
-            <div class="caption center-align">
-              <h3>West Bottoms</h3>
-              <a href="https://www.google.com/maps/place/West+Bottoms,+Kansas+City,+MO/@39.0989245,-94.6164467,14z/data=!3m1!4b1!4m5!3m4!1s0x87c0f0548522f553:0xb055917b22dbd8a5!8m2!3d39.1028227!4d-94.6011421" target="_blank"><i class="medium material-icons light grey-text text-lighten-3">directions</i><h5 class="light grey-text text-lighten-3">See on Map</h5></a>
-            </div>
-          </li>
-          <li>
-            <img src="assets/images/StarlightKC.jpg">
-            <div class="caption center-align">
-              <h3>Swope Park</h3>
-              <a href="https://www.google.com/maps/place/Starlight+Theatre/@39.0068582,-94.5496844,14z/data=!4m6!3m5!1s0x87c0e5b9d5cbfc83:0xa8a81bb66a30ce9b!8m2!3d39.0068578!4d-94.5321749!10e1" target="_blank"><i class="medium material-icons light grey-text text-lighten-3">directions</i><h5 class="light grey-text text-lighten-3">See on Map</h5></a>
-            </div>
-          </li>
-          <li>
-            <img src="assets/images/PowerandLight.jpg">
-            <div class="caption center-align">
-              <h3>Power & Light District</h3>
-              <a href="https://www.google.com/maps/place/Power+and+Light+District,+Kansas+City,+MO/@39.0980612,-94.5837531,17z/data=!3m1!4b1!4m5!3m4!1s0x87c0f067a18ab0e5:0xec5e3b747bd1bf11!8m2!3d39.0977632!4d-94.5811439" target="_blank"><i class="medium material-icons light grey-text text-lighten-3">directions</i><h5 class="light grey-text text-lighten-3">See on Map</h5></a>
-            </div>
-          </li>
-          <li>
-            <img src="assets/images/Plaza.jpg">
-            <div class="caption center-align">
-              <h3>Country Club Plaza</h3>
-              <a href="https://www.google.com/maps/place/Country+Club+Plaza,+Kansas+City,+MO+64112/@39.0408567,-94.5968279,16z/data=!3m1!4b1!4m5!3m4!1s0x87c0efb79076fb79:0x401c7f852667e6df!8m2!3d39.0413725!4d-94.5940452" target="_blank"><i class="medium material-icons light grey-text text-lighten-3">directions</i><h5 class="light grey-text text-lighten-3">See on Map</h5></a>
-            </div>
-          </li>
-          <li>
-            <img src="assets/images/CrossroadsKC.jpg">
-            <div class="caption center-align">
-              <h3>Crossroads</h3>
-              <a href="https://www.google.com/maps/place/Crossroads,+Kansas+City,+MO+64108/@39.0913085,-94.5883963,16z/data=!3m1!4b1!4m5!3m4!1s0x87c0f043c97c411b:0x790b9fd64e73dc78!8m2!3d39.0930392!4d-94.585659" target="_blank"><i class="medium material-icons light grey-text text-lighten-3">directions</i><h5 class="light grey-text text-lighten-3">See on Map</h5></a>
-            </div>
-          </li>
-        </ul>
-      </div>
-      </div>
-    <!-- Featured Venues -->
-  <div class="contain">
-      <div class="row featured-header">
-          <div class="col s12 center-align">
-            <h5>Featured Venues</h5>
-          </div>
-      </div>
-      <ul class="row featured-body">
-        <li class="col s6 m2 offset-m1"><a href="http://crossroadskc.com/" target="_blank"><img id="crossroads" src="assets/images/crossroads-logo.jpg" alt="Crossroads" class="responsive-img"></a></li>
-        <li class="col s6 m2 offset-m1"><a href="https://thegranada.com/" target="_blank"><img src="assets/images/granada-logo.jpg" alt="The Granada" class="responsive-img"></a></li>
-        <li class="col s6 m2 offset-m1"><a href="http://www.uptowntheater.com/home.html" target="_blank"><img src="assets/images/uptown-logo.jpg" alt="Uptown Theater" class="responsive-img"></a></li>
-        <li class="col s6 m2 offset-m1"><a href="https://www.providenceamp.com/about-the-venue.html" target="_blank"><img src="assets/images/providence-logo.jpg" alt="Providence Medical Amphitheater" class="responsive-img"></a></li>
-      </ul>
-      
-      <div class="row center-align" id="venue-dropdown">
-          <a class='dropdown-button btn' href='#' data-activates='dropdown1'>See All Venues</a>
-          <ul id='dropdown1' class='dropdown-content'>
-              <li class="divider"><a href="#!">Westport</a></li>
-              <li class="divider"><a href="#!">West Bottoms</a></li>
-              <li class="divider"><a href="#!">Swope Park</a></li>
-              <li class="divider"><a href="#!">Power & Light District</a></li>
-              <li class="divider"><a href="#!">Country Club Plaza</a></li>
-              <li class="divider"><a href="#!">Crossroads</a></li>
-            </ul>
 
-      </div>
-      <hr>
-<!-- Genre Section -->
-<div class="row">
-  <div class="col s12 m6 center-align">
-      <h5>Local Artists</h5>
+  <div class="hero-image">
+  <div class="hero-text">
+    <h3>Check out the hotSpots</h3>
   </div>
-  <div class="col s12 m6">
-    <div class="slider" id="genre-slider">
-        <ul class="slides">
-          <li>
-            <img src="assets/images/AlternativeIndieGenre.jpg">
-            <div class="caption left-align">
-              <h3>Genre Name</h3>
-              <a class="btn" href="#" target="_blank"><i class="material-icons left light grey-text text-lighten-3">album</i>More Info</a>
-            </div>
-          </li>
-          <li>
-            <img src="assets/images/ClassicalMusicGenre.jpg">
-            <div class="caption left-align">
-              <h3>Genre Name</h3>
-              <a class="btn" href="#" target="_blank"><i class="material-icons left light grey-text text-lighten-3">album</i>More Info</a>
-            </div>
-          </li>
-          <li>
-            <img src="assets/images/CountryBlueGrassGenre.jpg">
-            <div class="caption left-align">
-              <h3>Genre Name</h3>
-              <a class="btn" href="#" target="_blank"><i class="material-icons left light grey-text text-lighten-3">album</i>More Info</a>
-            </div>
-          </li>
-          <li>
-            <img src="assets/images/HipHopGenre.jpg">
-            <div class="caption left-align">
-              <h3>Genre Name</h3>
-              <a class="btn" href="#" target="_blank"><i class="material-icons left light grey-text text-lighten-3">album</i>More Info</a>
-            </div>
-          </li>
-          <li>
-            <img src="assets/images/JazzBluesGenre.jpeg">
-            <div class="caption left-align">
-              <h3>Genre Name</h3>
-              <a class="btn" href="#" target="_blank"><i class="material-icons left light grey-text text-lighten-3">album</i>More Info</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-      </div>
+</div>
+    <!-- Table Displaying Venues -->
+  <div class="row table">
+    <div class="col s12">
+      <table class="bordered">
+        <thead>
+          <tr>
+              <th>VENUE</th>
+              <th>LOCATION</th>
+              <th>MAP VIEW</th>
+              <th>EVENTS</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Arvest Bank Theatre at the Midland</td>
+            <td>Power & Light District <br><br>
+                1228 Main St <br>
+                Kansas City, MO 64105
+            </td>
+            <td><a href="https://www.google.com/maps/place/Arvest+Bank+Theatre+at+the+Midland/@39.0988882,-94.5859937,17z/data=!3m1!4b1!4m5!3m4!1s0x87c0f05d850de493:0x73538465c6c4cb4!8m2!3d39.0988882!4d-94.583805" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a></td>
+            <td><a href="events.html" class="waves-effect waves-light btn">See Events</a></td>
+          </tr>
+          <tr>
+            <td>Crossroads KC</td>
+            <td>Crossroads <br><br>
+                417 E 18th St <br>
+                Kansas City, MO 64108
+            </td>
+            <td><a href="https://www.google.com/maps/place/CrossroadsKC/@39.0914267,-94.5803093,17z/data=!3m1!4b1!4m5!3m4!1s0x87c0f0694dd50c65:0x67c657cf23d1d7e3!8m2!3d39.0914267!4d-94.5781206" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a></td>
+            <td><a href="events.html" class="waves-effect waves-light btn">See Events</a></td>
+          </tr>
+          <tr>
+            <td>KC Live!</td>
+            <td>Power & Light District <br><br>
+              13 Grand Blvd <br>
+              Kansas City, MO 64106
+            </td>
+            <td><a href="https://www.google.com/maps/place/KC+Live!/@39.0978079,-94.5838095,17z/data=!3m1!4b1!4m5!3m4!1s0x87c0f067a328031d:0x5e75c741881034a1!8m2!3d39.0978079!4d-94.5816208" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a></td>
+            <td><a href="events.html" class="waves-effect waves-light btn">See Events</a></td>
+          </tr>
+          <tr>
+            <td>miniBar</td>
+            <td>Area Name <br><br>
+              Address <br>
+              City, State Zip Code
+            </td>
+            <td><a href="#" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a></td>
+            <td><a href="events.html" class="waves-effect waves-light btn">See Events</a></td>
+          </tr>
+          <tr>
+            <td>One Block South</td>
+            <td>Area Name <br><br>
+              Address <br>
+              City, State Zip Code
+            </td>
+            <td><a href="#" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a></td>
+            <td><a href="events.html" class="waves-effect waves-light btn">See Events</a></td>
+          </tr>
+          <tr>
+            <td>Providence Medical Amphitheater</td>
+            <td>Area Name <br><br>
+              Address <br>
+              City, State Zip Code
+            </td>
+            <td><a href="#" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a></td>
+            <td><a href="events.html" class="waves-effect waves-light btn">See Events</a></td>
+          </tr>
+          <tr>
+            <td>Recordbar</td>
+            <td>Area Name <br><br>
+              Address <br>
+              City, State Zip Code
+            </td>
+            <td><a href="#" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a></td>
+            <td><a href="events.html" class="waves-effect waves-light btn">See Events</a></td>
+          </tr>
+          <tr>
+            <td>Sprint Center</td>
+            <td>Area Name <br><br>
+              Address <br>
+              City, State Zip Code
+            </td>
+            <td><a href="#" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a></td>
+            <td><a href="events.html" class="waves-effect waves-light btn">See Events</a></td>
+          </tr>
+          <tr>
+            <td>Startlight KC</td>
+            <td>Area Name <br><br>
+              Address <br>
+              City, State Zip Code
+            </td>
+            <td><a href="#" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a></td>
+            <td><a href="events.html" class="waves-effect waves-light btn">See Events</a></td>
+          </tr>
+          <tr>
+            <td>The Bottleneck</td>
+            <td>Area Name <br><br>
+              Address <br>
+              City, State Zip Code
+            </td>
+            <td><a href="#" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a></td>
+            <td><a href="events.html" class="waves-effect waves-light btn">See Events</a></td>
+          </tr>
+          <tr>
+            <td>The Granada</td>
+            <td>Area Name <br><br>
+              Address <br>
+              City, State Zip Code
+            </td>
+            <td><a href="#" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a></td>
+            <td><a href="events.html" class="waves-effect waves-light btn">See Events</a></td>
+          </tr>
+          <tr>
+            <td>The Truman</td>
+            <td>Area Name <br><br>
+              Address <br>
+              City, State Zip Code
+            </td>
+            <td><a href="#" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a></td>
+            <td><a href="events.html" class="waves-effect waves-light btn">See Events</a></td>
+          </tr>
+          <tr>
+            <td>Uptown Theatre</td>
+            <td>Area Name <br><br>
+              Address <br>
+              City, State Zip Code
+            </td>
+            <td><a href="#" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a></td>
+            <td><a href="events.html" class="waves-effect waves-light btn">See Events</a></td>
+          </tr>
+          <tr>
+            <td>Voodoo Lounge</td>
+            <td>Area Name <br><br>
+              Address <br>
+              City, State Zip Code
+            </td>
+            <td><a href="#" target="_blank" id="map-link"><img src="assets/images/musicfinderlogo.png" width="25px"> View on Map</a></td>
+            <td><a href="events.html" class="waves-effect waves-light btn">See Events</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
-      <hr>
+  <hr>
+
 <!-- Results Section -->
       <div class="row results-header">
           <div class="col s12 center-align">
-            <h5>Upcoming Events</h5>
+            <h5>Suggested Events</h5>
           </div>
       </div>
       <div class="row results-body">
@@ -170,6 +199,7 @@
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">Tech N9ne<i class="material-icons right">more_vert</i></span>
                 <p>Date & Time</p>
+                <p>Venue</p>
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Event Details</span>
@@ -191,6 +221,7 @@
                 <div class="card-content">
                   <span class="card-title activator grey-text text-darken-4">Tech N9ne<i class="material-icons right">more_vert</i></span>
                   <p>Date & Time</p>
+                  <p>Venue</p>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Event Details</span>
@@ -212,6 +243,7 @@
                   <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">Tech N9ne<i class="material-icons right">more_vert</i></span>
                     <p>Date & Time</p>
+                    <p>Venue</p>
                   </div>
                   <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Event Details</span>
@@ -242,10 +274,39 @@
 <!-- jQuery JS -->
 <script src="https://code.jquery.com/jquery.js"></script>
 <!--JavaScript at end of body for optimized loading-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="assets/javascript/materialize.js"></script>
-<script type="text/javascript" src="assets/javascript/app.js"></script>
+<!-- <script type="text/javascript" src="assets/javascript/app.js"></script>
 <script type="text/javascript" src="assets/javascript/bandsintown.js"></script>
-<script type="text/javascript" src="assets/javascript/tmasterAPI.js"></script>
+<script type="text/javascript" src="assets/javascript/tmasterAPI.js"></script> -->
+<script type="text/javascript">
+
+ // Create AJAX Call for venue information
+// //  var queryGenreURL = "https://app.ticketmaster.com/discovery/v2/venues.json?stateCode=MO,KS&apikey=vnnOldOossqCwb17Oq4wA0TfYfmlmWAa";
+// var queryVenueURL = "https://rest.bandsintown.com/venue/${city}events?app_id=KCHotSpot"
+
+// $.ajax({
+//   url: queryGenreURL,
+//   method: "GET"
+// }).then(function(response) {
+//   console.log(response)
+
+//  var results = response.venue
+
+//   console.log(results);
+
+//   for (var i = 0; i < results.length; i++) {
+//       var tRow = $("<tr>");
+//       var name = $("<td>").text(results[i].name);
+//       // var address = $("<td>").text(results[i].address.line1);
+//       var city = $("<td>").text(results[i].city);
+//       // var state = $("<td>").text(results[i].state.stateCode);
+//         tRow.append(venue, address, city, state);
+//         $("tbody").append(tRow);
+//   }
+  
+// });
+</script>
 
 </body>
 </html>
