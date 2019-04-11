@@ -1,4 +1,17 @@
 $(document).ready(function(){
+  $('.modal').modal();
+  $('.modal').modal({
+    dismissible: true, // Modal can be dismissed by clicking outside of the modal
+    opacity: .5, // Opacity of modal background
+    inDuration: 300, // Transition in duration
+    outDuration: 200, // Transition out duration
+    startingTop: '50%', // Starting top style attribute
+    endingTop: '50%', // Ending top style attribute
+    ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
+      alert("Ready");
+      console.log(modal, trigger);
+    },
+  });
     // Location page JS
     $('.slider').slider();
 
@@ -7,6 +20,7 @@ $(document).ready(function(){
 $("#playButton1").on("click", function() {
   $("#songPreview1").get(0).play();
 });
+
 
 
 
