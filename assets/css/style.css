@@ -135,6 +135,10 @@ h5 {
   text-align: center;
 }
 
+a {
+  color: orange;
+}
+
 .playCircle {
   color: #0288d1;
 }
