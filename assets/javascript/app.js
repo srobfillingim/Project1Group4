@@ -112,8 +112,7 @@ $("#pauseButton5").on("click", function() {
 
             artists.push(eventObject);
           }
-          
-
+        
 
           displayMusicEvents(artists);
          
@@ -189,9 +188,11 @@ $("#pauseButton5").on("click", function() {
         cardContent.append(name);
 
         var dateTime = eventObject.date + " " + eventObject.time;
-        var date = $("<p>").text("Date & Time: " + dateTime);
+        var date = $("<p>").text("Date & Time: " + moment(dateTime).format("LLL"));
         cardContent.append(date);
         card.append(cardContent);
+
+        console.log(dateTime);
         
         var cardReveal = $("<div>");
         cardReveal.addClass("card-reveal");
@@ -211,6 +212,7 @@ $("#pauseButton5").on("click", function() {
         var dateTime = eventObject.date + " " + eventObject.time;
         var pDateTime = $("<p>").text(dateTime);
         cardReveal.append(pDateTime);
+        
 
         var venueName = eventObject.venuename;
         var pVenueName = $("<p>").text(venueName);
