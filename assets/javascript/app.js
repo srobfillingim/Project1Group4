@@ -43,6 +43,7 @@ $(document).ready(function(){
       getEvents()
         .then(events=>{
           var results = events._embedded.events;
+          console.log(results);
         
           var artists = [];
 
@@ -60,16 +61,12 @@ $(document).ready(function(){
 
           displayMusicEvents(artists);
          
-            // TODO: FIND ALL ARTISTS
             var artistRequests=[];
 
-            // TODO: forEach Artist
-            // forEach
             artists.forEach(artist=>{
-              //console.log(artists);
+
               artistRequests.push(getArtist(artist.name));
             })
-            //console.log(artistRequests);
 
             var verified = [];
             Promise.all(artistRequests)
@@ -94,8 +91,7 @@ $(document).ready(function(){
               });
 
               Promise.all(artistEventsRequests).then(artistEventsResponses=>{
-                //console.log(artistEventsResponses);
-                //console.log(bands);
+
               });
             })
             .catch(console.log);
@@ -103,12 +99,10 @@ $(document).ready(function(){
         });
 
       function displayMusicEvents(bandsWithData) {
-        //console.log(bandsWithData);
+
 
         bandsWithData.forEach(function(eventObject){
-          //console.log(eventObject.name)
 
-      
        var mainCard = $("<div>");
        mainCard.addClass("col s6 m4");
 
@@ -123,11 +117,11 @@ $(document).ready(function(){
         image.addClass("activator events-image");
         //image.append(imgURL); 
         cardImage.append(image);
+        card.append(cardImage);
         console.log(imgURL);
         
         var cardContent = $("<div>");
         cardContent.addClass("card-content");
-        
 
         var artistName = eventObject.name;
         var name = $("<span>").text(artistName);
@@ -135,13 +129,11 @@ $(document).ready(function(){
         var iClass = $("<i>").addClass("material-icons right").text("more_vert");
         name.append(iClass);
         cardContent.append(name);
-        
 
         var dateTime = eventObject.date + " " + eventObject.time;
         var date = $("<p>").text("Date & Time: " + dateTime);
         cardContent.append(date);
         card.append(cardContent);
-        //console.log(date);
         
         var cardReveal = $("<div>");
         cardReveal.addClass("card-reveal");
@@ -161,8 +153,6 @@ $(document).ready(function(){
         var dateTime = eventObject.date + " " + eventObject.time;
         var pDateTime = $("<p>").text(dateTime);
         cardReveal.append(pDateTime);
-
-        console.log(moment(dateTime))
 
         var venueName = eventObject.venuename;
         var pVenueName = $("<p>").text(venueName);
