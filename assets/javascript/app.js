@@ -46,10 +46,32 @@ $("#pauseButton2").on("click", function() {
 $("#playButton3").on("click", function() {
   $("audio").trigger("pause");
   $("#songPreview3").trigger("play");
+
+});
+$("#pauseButton3").on("click", function() {
+  $("#songPreview3").trigger("pause");
+
 });
 $("#pauseButton3").on("click", function() {
   $("#songPreview3").trigger("pause");
 });
+
+$("#playButton4").on("click", function() {
+  $("audio").trigger("pause");
+  $("#songPreview4").trigger("play");
+});
+$("#pauseButton4").on("click", function() {
+  $("#songPreview4").trigger("pause");
+});
+
+$("#playButton5").on("click", function() {
+  $("audio").trigger("pause");
+  $("#songPreview5").trigger("play");
+});
+$("#pauseButton5").on("click", function() {
+  $("#songPreview5").trigger("pause");
+});
+
 
 $("#playButton4").on("click", function() {
   $("audio").trigger("pause");
