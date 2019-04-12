@@ -17,9 +17,56 @@ $(document).ready(function(){
 
 //AUDIO & CAPTION VARIABLES & FUNCTIONS
 
+// $("#playButton1").on("click", function() {
+//   if ($("#songPreview1") !== "playing") {
+//     $("#songPreview1").trigger("play");
+//   }
+//   else if ($("#songPreview1") == "playing") {
+//     $("#songPreview1").trigger("pause");
+//   }
+// });
+
+
 $("#playButton1").on("click", function() {
-  $("#songPreview1").get(0).play();
+  $("audio").trigger("pause");
+  $("#songPreview1").trigger("play");
 });
+$("#pauseButton1").on("click", function() {
+  $("#songPreview1").trigger("pause");
+});
+
+$("#playButton2").on("click", function() {
+  $("audio").trigger("pause");
+  $("#songPreview2").trigger("play");
+});
+$("#pauseButton2").on("click", function() {
+  $("#songPreview2").trigger("pause");
+});
+
+$("#playButton3").on("click", function() {
+  $("audio").trigger("pause");
+  $("#songPreview3").trigger("play");
+});
+$("#pauseButton3").on("click", function() {
+  $("#songPreview3").trigger("pause");
+});
+
+$("#playButton4").on("click", function() {
+  $("audio").trigger("pause");
+  $("#songPreview4").trigger("play");
+});
+$("#pauseButton4").on("click", function() {
+  $("#songPreview4").trigger("pause");
+});
+
+$("#playButton5").on("click", function() {
+  $("audio").trigger("pause");
+  $("#songPreview5").trigger("play");
+});
+$("#pauseButton5").on("click", function() {
+  $("#songPreview5").trigger("pause");
+});
+
 
 //API FUNCTIONS
 
