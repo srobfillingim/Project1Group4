@@ -21,13 +21,10 @@ $("#playButton1").on("click", function() {
   $("#songPreview1").get(0).play();
 });
 
-
-
-
 //API FUNCTIONS
 
   var bands = {};
- //api1 =
+
       getEvents()
         .then(events=>{
           var results = events._embedded.events;
@@ -64,6 +61,8 @@ $("#playButton1").on("click", function() {
                 if(artistResponse.id){
                   verified.push(artistResponse.name);
                   bands[artistResponse.id] = artistResponse;
+
+                  console.log(artistResponse.id);
                 }
               })
               // TODO:  Now you have all the artist events
@@ -95,7 +94,7 @@ $("#playButton1").on("click", function() {
        mainCard.addClass("col s6 m4");
 
        var card = $("<div>");
-       card.addClass("card");
+       card.addClass("card events-card");
        mainCard.append(card);
 
         var cardImage= $("<div>");
@@ -165,26 +164,4 @@ $("#playButton1").on("click", function() {
 
 
 });
-
-{/*
-
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="assets/images/HipHopGenre.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Tech N9ne<i class="material-icons right">more_vert</i></span>
-      <p>Date & Time</p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Event Details</span>
-      <br>
-      <p>Artist Name</p>
-      <p>Date & Time</p>
-      <p>Venue | Address</p>
-      <p>Description</p>
-      <br>
-      <a class="waves-effect waves-light btn">Buy Tickets</a>
-    </div>
-*/}
-
            
