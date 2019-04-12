@@ -4,50 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" type="image/png" href="assets/images/musicfinderlogo.png">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="assets/css/reset.css">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="assets/css/materialize.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="assets/css/style.css">
-    <title>Genre</title>
+    <title>Genres | KC hotSpot</title>
 </head>
+
 <!-- Navbar goes here -->
-<div class="navbar-fixed"></div>
+<div class="navbar-fixed">
 <nav>
   <div class="nav-wrapper grey darken-4">
-    <a href="index.html" class="brand-logo"><i class="material-icons">audiotrack</i>KC HotSpot</a>
+    <a href="index.html"><img src="assets/images/musicfinderlogo.png" width="50px" id="logo"></a>
+    <a href="index.html" class="brand-logo">KC hotSpot</a>
     <ul class="right hide-on-med-and-down">
-      <li><a href="index.html"><i class="material-icons">home</i></a></li>
-      <li><a href="genre.html"><i class="material-icons">headset</i></a></li>
-      <li><a href="location.html"><i class="material-icons">map</i></a></li>
-      <li><a href="#"><i class="material-icons">event</i></a></li>
+      <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+      <li><a href="genre.html"><i class="material-icons left">music_note</i>Genre</a></li>
+      <li><a href="location.html"><i class="material-icons left">location_city</i>Venues</a></li>
+      <li class="input-field"><input id="search" type="search" required><label class="label-icon" for="search"><i class="material-icons">search</i></label><i class="tiny material-icons">close</i>
     </ul>
+    
   </div>
 </nav>
 </div>
 
 <body>
-    <!-- Page Content goes here -->
+<!-- Genre Image Slider -->
     <div class="row">
     <div class="slider">
       <ul class="slides">
         <li>
           <img src="assets/images/ClassicalMusicGenre.jpg"></a>
             <div class="caption center-align">
-              <h3>Classical Music</h3>
+              <h3>Classical</h3>
             </div>
           </li>
           <li>
             <img src="assets/images/JazzBluesGenre.jpeg"></a>
             <div class="caption center-align">
-              <h3>Blues/Jazz</h3>
+              <h3>Jazz</h3>
             </div>
           </li>
           <li>
             <img src="assets/images/CountryBlueGrassGenre.jpg"></a>
               <div class="caption center-align">
-                <h3>Country/Blue Grass</h3>
+                <h3>Country</h3>
               </div>
           </li>
           <li>
@@ -59,26 +63,283 @@
           <li>
             <img src="assets/images/AlternativeIndieGenre.jpg"></a>
               <div class="caption center-align">
-                <h3>Alternative/Indie</h3>
+                <h3>Alternative</h3>
               </div>
           </li>
         </ul>
       </div>
       </div>
-      <div class="row center-align">
-          <!-- Dropdown Trigger -->
-          <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>See All Genres</a>
-              <!-- Dropdown Structure -->
-              <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="#!">Pop</a></li>
-                <li><a href="#!">Country/Blue Grass</a></li>
-                <li><a href="#!">Alternative/Indie</a></li>
-                <li><a href="#!">Blues/Jazz</a></li>
-                <li><a href="#!">Hip Hop</a></li>
-                <li><a href="#!">Classical</li>
-              </ul>
+      
+<!-- Cards Displaying Genres -->
+      <div class="row container">
+          <div class="col s6 m3 center-align">
+              <div class="card">
+                  <div class="card-image red-text">
+                    <img src="assets/images/genreImages/alternative-solo-performer.jpg">
+                <span class="card-title">ALTERNATIVE</span>
+              </div>
+              <div class="card-action center-align">
+                <a href="events.html"><i class="material-icons left white-text">music_note</i>Select</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s6 m3 center-align">
+              <div class="card">
+                  <div class="card-image red-text">
+                    <img src="assets/images/genreImages/blues-cymbal.jpg">
+                  <span class="card-title">BLUES</span>
+                </div>
+                <div class="card-action">
+                  <a href="events.html"><i class="material-icons left white-text">music_note</i>Select</a>
+                </div>
+              </div>
+            </div>
+          <div class="col s6 m3 center-align">
+              <div class="card">
+                  <div class="card-image red-text">
+                    <img src="assets/images/genreImages/classical-violin-sheet-music.jpg">
+                    <span class="card-title">CLASSICAL</span>
+                  </div>
+                  <div class="card-action">
+                    <a href="events.html"><i class="material-icons left white-text">music_note</i>Select</a>
+                  </div>
+                </div>
+              </div>
+          <div class="col s6 m3 center-align">
+              <div class="card">
+                  <div class="card-image red-text">
+                    <img src="assets/images/genreImages/country-coyboy-hat.jpg">
+                  <span class="card-title">COUNTRY</span>
+                </div>
+                <div class="card-action">
+                  <a href="events.html"><i class="material-icons left white-text">music_note</i>Select</a>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="row container">
+          <div class="col s6 m3 center-align">
+              <div class="card">
+                  <div class="card-image red-text">
+                    <img src="assets/images/genreImages/electronic-dj-analogue.jpg">
+                <span class="card-title">ELECTRONIC</span>
+              </div>
+              <div class="card-action center-align">
+                <a href="events.html"><i class="material-icons left white-text">music_note</i>Select</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s6 m3 center-align">
+              <div class="card">
+                  <div class="card-image red-text">
+                    <img src="assets/images/genreImages/folk-banjo.jpg">
+                  <span class="card-title">FOLK</span>
+                </div>
+                <div class="card-action">
+                  <a href="events.html"><i class="material-icons left white-text">music_note</i>Select</a>
+                </div>
+              </div>
+            </div>
+            <div class="col s6 m3 center-align">
+                <div class="card">
+                    <div class="card-image red-text">
+                      <img src="assets/images/genreImages/hip-hop-mic-analogue.jpg">
+                    <span class="card-title">HIP-HOP/RAP</span>
+                  </div>
+                  <div class="card-action">
+                    <a href="events.html"><i class="material-icons left white-text">music_note</i>Select</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col s6 m3 center-align">
+                <div class="card">
+                    <div class="card-image red-text">
+                      <img src="assets/images/genreImages/jazz-saxaphone.jpg">
+                    <span class="card-title">JAZZ</span>
+                  </div>
+                  <div class="card-action">
+                    <a href="events.html"><i class="material-icons left white-text">music_note</i>Select</a>
+                  </div>
+                </div>
+            </div>
+      </div>
+
+      <div class="row container">
+          <div class="col s6 m3 center-align">
+              <div class="card">
+                  <div class="card-image red-text">
+                    <img src="assets/images/genreImages/latina-salsa.jpg">
+                <span class="card-title">LATIN</span>
+              </div>
+              <div class="card-action center-align">
+                <a href="events.html"><i class="material-icons left white-text">music_note</i>Select</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s6 m3 center-align">
+              <div class="card">
+                  <div class="card-image red-text">
+                    <img src="assets/images/genreImages/metal-metal.jpg">
+                  <span class="card-title">METAL</span>
+                </div>
+                <div class="card-action">
+                  <a href="events.html"><i class="material-icons left white-text">music_note</i>Select</a>
+                </div>
+              </div>
+          </div>
+          <div class="col s6 m3 center-align">
+              <div class="card">
+                  <div class="card-image red-text">
+                    <img src="assets/images/genreImages/pop-headphones.jpg">
+                    <span class="card-title">POP</span>
+                  </div>
+                  <div class="card-action">
+                    <a href="events.html"><i class="material-icons left white-text">music_note</i>Select</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col s6 m3 center-align">
+              <div class="card">
+                  <div class="card-image red-text">
+                    <img src="assets/images/genreImages/punk.jpg">
+                    <span class="card-title">PUNK</span>
+                  </div>
+                  <div class="card-action">
+                    <a href="events.html"><i class="material-icons left white-text">music_note</i>Select</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row container">
+          <div class="col s6 m3 center-align">
+              <div class="card">
+                  <div class="card-image red-text">
+                    <img src="assets/images/genreImages/r&b-soul-mic.jpg">
+                <span class="card-title">R&B/SOUL</span>
+              </div>
+              <div class="card-action center-align">
+                <a href="events.html"><i class="material-icons left white-text">music_note</i>Select</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s6 m3 center-align">
+              <div class="card">
+                  <div class="card-image red-text">
+                    <img src="assets/images/genreImages/reggae-ukulele.jpg">
+                  <span class="card-title">REGGAE</span>
+                </div>
+                <div class="card-action">
+                  <a href="events.html"><i class="material-icons left white-text">music_note</i>Select</a>
+                </div>
+              </div>
+          </div>
+          <div class="col s6 m3 center-align">
+              <div class="card">
+                  <div class="card-image red-text">
+                    <img src="assets/images/genreImages/religious-audience.jpg">
+                    <span class="card-title">RELIGIOUS</span>
+                  </div>
+                  <div class="card-action">
+                    <a href="events.html"><i class="material-icons left white-text">music_note</i>Select</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col s6 m3 center-align">
+                <div class="card">
+                  <div class="card-image red-text">
+                    <img src="assets/images/genreImages/rock.jpeg">
+                    <span class="card-title">ROCK</span>
+                  </div>
+                  <div class="card-action">
+                    <a href="events.html"><i class="material-icons left white-text">music_note</i>Select</a>
+                  </div>
+                </div>
+          </div>
+      </div>
+      <hr>
+
+<!-- Results Section -->
+      <div class="row results-header">
+          <div class="col s12 center-align">
+            <h5>Suggested Events</h5>
+          </div>
+      </div>
+      <div class="row results-body">
+        <div class="col s6 m4">
+          <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/images/HipHopGenre.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Tech N9ne<i class="material-icons right">more_vert</i></span>
+                <p>Date & Time</p>
+                <p>Venue</p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Event Details</span>
+                <br>
+                <p>Artist Name</p>
+                <p>Date & Time</p>
+                <p>Venue | Address</p>
+                <p>Description</p>
+                <br>
+                <a class="waves-effect waves-light btn">Buy Tickets</a>
+              </div>
+          </div>
         </div>
-    </div>
+        <div class="col s6 m4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="assets/images/HipHopGenre.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Tech N9ne<i class="material-icons right">more_vert</i></span>
+                  <p>Date & Time</p>
+                  <p>Venue</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Event Details</span>
+                  <br>
+                  <p>Artist Name</p>
+                  <p>Date & Time</p>
+                  <p>Venue | Address</p>
+                  <p>Description</p>
+                  <br>
+                  <a class="waves-effect waves-light btn">Buy Tickets</a>
+                </div>
+            </div>
+          </div>
+          <div class="col s6 m4">
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="assets/images/HipHopGenre.jpg">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Tech N9ne<i class="material-icons right">more_vert</i></span>
+                    <p>Date & Time</p>
+                    <p>Venue</p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Event Details</span>
+                    <br>
+                    <p>Artist Name</p>
+                    <p>Date & Time</p>
+                    <p>Venue | Address</p>
+                    <p>Description</p>
+                    <br>
+                    <a class="waves-effect waves-light btn">Buy Tickets</a>
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+
+      <div id="musicEvents"></div>
+        
+
+
   </div>
 
 <!-- Footer goes here -->

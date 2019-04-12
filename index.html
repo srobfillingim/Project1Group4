@@ -1,69 +1,317 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="assets/css/reset.css">
-        <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="assets/css/materialize.css"  media="screen,projection"/>
-        <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" type="image/png" href="assets/images/musicfinderlogo.png">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/css/reset.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+    <title>Home | KC hotSpot</title>
 </head>
 
-<body>
-    <div class="navbar-fixed">
-        <nav>
-          <div class="nav-wrapper grey darken-4">
-              <a href="#!" class="brand-logo"><i class="material-icons">audiotrack</i>KC HotSpot</a>
-              <ul class="right hide-on-med-and-down">
-                  <li><a href="index.html"><i class="material-icons">home</i></a></li>
-                  <li><a href="genre.html"><i class="material-icons">headset</i></a></li>
-                  <li><a href="location.html"><i class="material-icons">map</i></a></li>
-                  <li><a href="#"><i class="material-icons">event</i></a></li>
-               </ul>
-            </div>
-        </nav>
-    </div>
-              
-        <div class = "contain">
-            <div class = "row">
-                <div class="col s12 m6">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="assets/images/record-player.jpg">
-                            <span class="card-title"><a class="waves-effect waves-light btn-large" href="genre.html">GENRE</a></span>
-                        </div>
-                    </div>
-               </div>
-              <div class="col s12 m6">
-                  <div class="card">
-                    <div class="card-image">
-                      <img src="assets/images/blue-bricks-door-845242.jpg">
-                       <span class="card-title"><a class="waves-effect waves-light btn-large" href="location.html">LOCATION</a></span>
-                    </div>  
-                 </div>             
-              </div>
-            </div> <!--row-->
-        </div> <!--container-->
-        <!---Mission Statment and Upcoming Events goes in the container below-->
-        <div class="container">
-            <div class="row"></div>
-        </div>
-
-    <!-- Footer goes here -->
-    <footer class="page-footer">
-        <p>Copyright © 2019</p>
-    </footer>
+<!-- Navbar goes here -->
+<div class="navbar-fixed">
+<nav>
+  <div class="nav-wrapper grey darken-4">
+    <a href="index.html"><img src="assets/images/musicfinderlogo.png" width="50px" id="logo"></a>
+    <a href="index.html" class="brand-logo">KC hotSpot</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+      <li><a href="genre.html"><i class="material-icons left">music_note</i>Genre</a></li>
+      <li><a href="location.html"><i class="material-icons left">location_city</i>Venues</a></li>
+      <li class="input-field"><input id="search" type="search" required><label class="label-icon" for="search"><i class="material-icons">search</i></label><i class="tiny material-icons">close</i>
+    </ul>
     
-    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
+  </div>
+</nav>
+</div>
+
+<body>
+<!-- Hero Slider -->
+    <div class="row">
+    <div class="slider" id="location-slider">
+        <ul class="slides">
+          <li>
+            <img src="assets/images/Westport.jpg">
+            <div class="caption center-align">
+              <h3>Westport</h3>
+              <a href="https://www.google.com/maps/place/Old+Westport,+Kansas+City,+MO+64111/@39.0531549,-94.5967608,16z/data=!3m1!4b1!4m5!3m4!1s0x87c0efc548a666a7:0x1aee77508fea2e90!8m2!3d39.0524993!4d-94.5921098" target="_blank"><i class="medium material-icons light grey-text text-lighten-3">directions</i><h5 class="light grey-text text-lighten-3">See on Map</h5></a>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/WestBottomsKC.jpg">
+            <div class="caption center-align">
+              <h3>West Bottoms</h3>
+              <a href="https://www.google.com/maps/place/West+Bottoms,+Kansas+City,+MO/@39.0989245,-94.6164467,14z/data=!3m1!4b1!4m5!3m4!1s0x87c0f0548522f553:0xb055917b22dbd8a5!8m2!3d39.1028227!4d-94.6011421" target="_blank"><i class="medium material-icons light grey-text text-lighten-3">directions</i><h5 class="light grey-text text-lighten-3">See on Map</h5></a>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/StarlightKC.jpg">
+            <div class="caption center-align">
+              <h3>Swope Park</h3>
+              <a href="https://www.google.com/maps/place/Starlight+Theatre/@39.0068582,-94.5496844,14z/data=!4m6!3m5!1s0x87c0e5b9d5cbfc83:0xa8a81bb66a30ce9b!8m2!3d39.0068578!4d-94.5321749!10e1" target="_blank"><i class="medium material-icons light grey-text text-lighten-3">directions</i><h5 class="light grey-text text-lighten-3">See on Map</h5></a>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/PowerandLight.jpg">
+            <div class="caption center-align">
+              <h3>Power & Light District</h3>
+              <a href="https://www.google.com/maps/place/Power+and+Light+District,+Kansas+City,+MO/@39.0980612,-94.5837531,17z/data=!3m1!4b1!4m5!3m4!1s0x87c0f067a18ab0e5:0xec5e3b747bd1bf11!8m2!3d39.0977632!4d-94.5811439" target="_blank"><i class="medium material-icons light grey-text text-lighten-3">directions</i><h5 class="light grey-text text-lighten-3">See on Map</h5></a>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/Plaza.jpg">
+            <div class="caption center-align">
+              <h3>Country Club Plaza</h3>
+              <a href="https://www.google.com/maps/place/Country+Club+Plaza,+Kansas+City,+MO+64112/@39.0408567,-94.5968279,16z/data=!3m1!4b1!4m5!3m4!1s0x87c0efb79076fb79:0x401c7f852667e6df!8m2!3d39.0413725!4d-94.5940452" target="_blank"><i class="medium material-icons light grey-text text-lighten-3">directions</i><h5 class="light grey-text text-lighten-3">See on Map</h5></a>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/CrossroadsKC.jpg">
+            <div class="caption center-align">
+              <h3>Crossroads</h3>
+              <a href="https://www.google.com/maps/place/Crossroads,+Kansas+City,+MO+64108/@39.0913085,-94.5883963,16z/data=!3m1!4b1!4m5!3m4!1s0x87c0f043c97c411b:0x790b9fd64e73dc78!8m2!3d39.0930392!4d-94.585659" target="_blank"><i class="medium material-icons light grey-text text-lighten-3">directions</i><h5 class="light grey-text text-lighten-3">See on Map</h5></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      </div>
+
+<!-- Featured Venues -->
+  <div class="contain">
+      <div class="row featured-header">
+          <div class="col s12 center-align">
+            <h5>Featured Venues</h5>
+          </div>
+      </div>
+      <ul class="row featured-body">
+        <li class="col s6 m2 offset-m1"><a href="http://crossroadskc.com/" target="_blank"><img id="crossroads" src="assets/images/crossroads-logo.jpg" alt="Crossroads" class="responsive-img"></a></li>
+        <li class="col s6 m2 offset-m1"><a href="https://thegranada.com/" target="_blank"><img src="assets/images/granada-logo.jpg" alt="The Granada" class="responsive-img"></a></li>
+        <li class="col s6 m2 offset-m1"><a href="http://www.uptowntheater.com/home.html" target="_blank"><img src="assets/images/uptown-logo.jpg" alt="Uptown Theater" class="responsive-img"></a></li>
+        <li class="col s6 m2 offset-m1"><a href="https://www.providenceamp.com/about-the-venue.html" target="_blank"><img src="assets/images/providence-logo.jpg" alt="Providence Medical Amphitheater" class="responsive-img"></a></li>
+      </ul>
+      
+      <div class="row center-align" id="venue-button">
+        <a class="btn-large" href="location.html"><i class="material-icons right light grey-text text-lighten-3">chevron_right</i>See All Venues</a>
+      </div>
+      <hr>
+<!-- Local Artist Section -->
+    <div class="row">
+      <div class="col s12 m4 push-m1 local-artist-header">
+        <h5>Local Artists</h5>
+        <ul class="collection">
+          <li class="collection-item avatar">
+            <img src="assets/images/genreImages/mommasboy.jpg" alt="" class="circle">
+            <span class="title"><b>Momma's Boy</b></span>
+            <p>Alternative <br>
+              <a href="#" target="_blank">Website</a>
+            </p>
+            <a href="#!" class="secondary-content"><i class="small material-icons playCircle" id="playButton1" >play_circle_outline</i></a>
+          </li>
+          <li class="collection-item avatar">
+            <img src="assets/images/genreImages/mommasboy.jpg" alt="" class="circle">
+            <span class="title">Artist Name</span>
+            <p>Genre <br>
+              <a href="#" target="_blank">Website</a>
+            </p>
+            <a href="#!" class="secondary-content"><i class="small material-icons playCircle" id="playButton2">play_circle_outline</i></a>
+          </li>
+          <li class="collection-item avatar">
+            <img src="assets/images/genreImages/mommasboy.jpg" alt="" class="circle">
+            <span class="title">Artist Name</span>
+            <p>Genre <br>
+              <a href="#" target="_blank">Website</a>
+            </p>
+            <a href="#!" class="secondary-content"><i class="small material-icons playCircle" id="playButton3">play_circle_outline</i></a>
+          </li>
+          <li class="collection-item avatar">
+            <img src="assets/images/genreImages/mommasboy.jpg" alt="" class="circle">
+            <span class="title">Artist Name</span>
+            <p>Genre <br>
+              <a href="#" target="_blank">Website</a>
+            </p>
+            <a href="#!" class="secondary-content"><i class="small material-icons playCircle" id="playButton4">play_circle_outline</i></a>
+          </li>
+          <li class="collection-item avatar">
+            <img src="assets/images/genreImages/mommasboy.jpg" alt="" class="circle">
+            <span class="title">Artist Name</span>
+            <p>Genre <br>
+              <a href="#" target="_blank">Website</a>
+            </p>
+            <a href="#!" class="secondary-content"><i class="small material-icons playCircle" id="playButton5">play_circle_outline</i></a>
+          </li>
+        </ul>
+    </div>
+
+<!-- Genre Section -->
+  <div class="col s12 m6 push-m1 discover-header">
+    <h5>Discover</h5>
+    <div class="slider" id="genre-slider">
+        <ul class="slides">
+          <li>
+            <img src="assets/images/AlternativeIndieGenre.jpg">
+            <div class="caption left-align">
+              <h4>Alternative</h4>
+              <a class="btn white-text" href="events.html"><i class="material-icons right light white-text">chevron_right</i>Select</a>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/ClassicalMusicGenre.jpg">
+            <div class="caption left-align">
+              <h4>Classical</h4>
+              <a class="btn" href="events.html"><i class="material-icons right light grey-text text-lighten-3">chevron_right</i>Select</a>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/CountryBlueGrassGenre.jpg">
+            <div class="caption left-align">
+              <h4>Country</h4>
+              <a class="btn" href="events.html"><i class="material-icons right light grey-text text-lighten-3">chevron_right</i>Select</a>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/HipHopGenre.jpg">
+            <div class="caption left-align">
+              <h4>Hip Hop</h4>
+              <a class="btn" href="events.html"><i class="material-icons right light grey-text text-lighten-3">chevron_right</i>Select</a>
+            </div>
+          </li>
+          <li>
+            <img src="assets/images/JazzBluesGenre.jpeg">
+            <div class="caption left-align">
+              <h4>Jazz</h4>
+              <a class="btn" href="events.html"><i class="material-icons right light grey-text text-lighten-3">chevron_right</i>Select</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      </div>
+  </div>
+  <div class="row center-align" id="genre-button">
+    <div class="col s12 m6 push-m5">
+      <a class="btn-large" href="genre.html"><i class="material-icons right light grey-text text-lighten-3">chevron_right</i>See All Genres</a>
+    </div>
+  </div>
+  <hr>
+
+<!-- Results Section -->
+      <div class="row results-header">
+          <div class="col s12 center-align">
+            <h5>Suggested Events</h5>
+          </div>
+      </div>
+      <div class="row results-body">
+        <div class="col s6 m4">
+          <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/images/HipHopGenre.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Tech N9ne<i class="material-icons right">more_vert</i></span>
+                <p>Date & Time</p>
+                <p>Venue</p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Event Details</span>
+                <br>
+                <p>Artist Name</p>
+                <p>Date & Time</p>
+                <p>Venue | Address</p>
+                <p>Description</p>
+                <br>
+                <a class="waves-effect waves-light btn">Buy Tickets</a>
+              </div>
+          </div>
+        </div>
+        <div class="col s6 m4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="assets/images/HipHopGenre.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Tech N9ne<i class="material-icons right">more_vert</i></span>
+                  <p>Date & Time</p>
+                  <p>Venue</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Event Details</span>
+                  <br>
+                  <p>Artist Name</p>
+                  <p>Date & Time</p>
+                  <p>Venue | Address</p>
+                  <p>Description</p>
+                  <br>
+                  <a class="waves-effect waves-light btn">Buy Tickets</a>
+                </div>
+            </div>
+          </div>
+          <div class="col s6 m4">
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="assets/images/HipHopGenre.jpg">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Tech N9ne<i class="material-icons right">more_vert</i></span>
+                    <p>Date & Time</p>
+                    <p>Venue</p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Event Details</span>
+                    <br>
+                    <p>Artist Name</p>
+                    <p>Date & Time</p>
+                    <p>Venue | Address</p>
+                    <p>Description</p>
+                    <br>
+                    <a class="waves-effect waves-light btn">Buy Tickets</a>
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+      <!-- <div id="musicEvents"></div> -->
+
+<!-- Audio -->
+      <div>
+        <audio id="songPreview1">
+            <source src="assets/audio/Make-Believe.mp3" type="audio/mp3">
+        </audio>
+        <audio id="songPreview2">
+          <source src="assets/audio/Holy-Water" type="audio/mp3">
+        </audio>
+        <audio id="songPreview3">
+          <source src="#" type="audio/mp3">
+        </audio>
+        <audio id="songPreview4">
+          <source src="#" type="audio/mp3">
+        </audio>
+        <audio id="songPreview5">
+          <source src="#" type="audio/mp3">
+        </audio>
+    </div>
+
+  </div>
+
+<!-- Footer goes here -->
+<footer class="page-footer">
+    <p>Copyright © 2019</p>
+</footer>
+
+<!-- jQuery JS -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="assets/javascript/materialize.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+<script type="text/javascript" src="assets/javascript/bandsintown.js"></script>
+<script type="text/javascript" src="assets/javascript/tmasterAPI.js"></script>
+
 </body>
 </html>
-
 
 
 

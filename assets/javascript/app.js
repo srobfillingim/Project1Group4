@@ -1,45 +1,30 @@
 $(document).ready(function(){
+  $('.modal').modal();
+  $('.modal').modal({
+    dismissible: true, // Modal can be dismissed by clicking outside of the modal
+    opacity: .5, // Opacity of modal background
+    inDuration: 300, // Transition in duration
+    outDuration: 200, // Transition out duration
+    startingTop: '50%', // Starting top style attribute
+    endingTop: '50%', // Ending top style attribute
+    ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
+      alert("Ready");
+      console.log(modal, trigger);
+    },
+  });
     // Location page JS
     $('.slider').slider();
-    $('.carousel.carousel-slider').carousel({fullWidth: true});
-    // $('.carousel').carousel({fullWidth: true});
-    // $('.dropdown-button').dropdown('open');
-    // $('.dropdown-button').dropdown('close');
-    
-    // $('.dropdown-button').dropdown({
-    //     inDuration: 300,
-    //     outDuration: 225,
-    //     constrainWidth: false, // Does not change width of dropdown to that of the activator
-    //     hover: true, // Activate on hover
-    //     gutter: 0, // Spacing from edge
-    //     belowOrigin: false, // Displays dropdown below the button
-    //     alignment: 'left', // Displays dropdown with edge aligned to the left of button
-    //     stopPropagation: false // Stops event propagation
-    //   }
-    // );
 
-    // $('.datepicker').pickadate({
-    //     selectMonths: true, // Creates a dropdown to control month
-    //     selectYears: 15, // Creates a dropdown of 15 years to control year,
-    //     today: 'Today',
-    //     clear: 'Clear',
-    //     close: 'Ok',
-    //     closeOnSelect: false, // Close upon selecting a date,
-    //     container: undefined, // ex. 'body' will append picker to body
-    //   });
+//AUDIO & CAPTION VARIABLES & FUNCTIONS
 
-  //   $('.datepicker').pickadate({
-  //       selectMonths: true, // Creates a dropdown to control month
-  //       selectYears: 15, // Creates a dropdown of 15 years to control year,
-  //       today: 'Today',
-  //       clear: 'Clear',
-  //       close: 'Ok',
-  //       closeOnSelect: false, // Close upon selecting a date,
-  //       container: undefined, // ex. 'body' will append picker to body
-  //     });
+$("#playButton1").on("click", function() {
+  $("#songPreview1").get(0).play();
+});
+
+//API FUNCTIONS
 
   var bands = {};
- //api1 =
+
       getEvents()
         .then(events=>{
           var results = events._embedded.events;
@@ -76,6 +61,8 @@ $(document).ready(function(){
                 if(artistResponse.id){
                   verified.push(artistResponse.name);
                   bands[artistResponse.id] = artistResponse;
+
+                  console.log(artistResponse.id);
                 }
               })
               // TODO:  Now you have all the artist events
@@ -177,26 +164,4 @@ $(document).ready(function(){
 
 
 });
-
-{/*
-
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="assets/images/HipHopGenre.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Tech N9ne<i class="material-icons right">more_vert</i></span>
-      <p>Date & Time</p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Event Details</span>
-      <br>
-      <p>Artist Name</p>
-      <p>Date & Time</p>
-      <p>Venue | Address</p>
-      <p>Description</p>
-      <br>
-      <a class="waves-effect waves-light btn">Buy Tickets</a>
-    </div>
-*/}
-
            
