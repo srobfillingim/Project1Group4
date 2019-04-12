@@ -94,7 +94,7 @@ $("#playButton1").on("click", function() {
        mainCard.addClass("col s6 m4");
 
        var card = $("<div>");
-       card.addClass("card");
+       card.addClass("card events-card");
        mainCard.append(card);
 
         var cardImage= $("<div>");
