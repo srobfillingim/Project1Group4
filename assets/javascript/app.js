@@ -90,6 +90,8 @@ $("#pauseButton5").on("click", function() {
 
             artists.push(eventObject);
           }
+          
+
 
           displayMusicEvents(artists);
          
@@ -168,6 +170,8 @@ $("#pauseButton5").on("click", function() {
         var date = $("<p>").text("Date & Time: " + dateTime);
         cardContent.append(date);
         card.append(cardContent);
+
+        console.log()
         
         var cardReveal = $("<div>");
         cardReveal.addClass("card-reveal");
