@@ -43,39 +43,39 @@
   .btn-floating:focus {
     background-color: #01579b;
   }
-/* <<<<<<< genre-section-branch
+
   .modal.bottom-sheet {
       max-height: 90%;
   }
-=======
- */
+
+
   hr {
     border: 1px solid #e0e0e0;
   }
 
-#location-slider, .featured-header, .results-header {
-    margin-bottom: 40px;
+  #location-slider, .featured-header, .results-header {
+      margin-bottom: 40px;
+    }
+
+  .local-artist-header, .discover-header {
+    margin-top: 10px;
   }
 
-.local-artist-header, .discover-header {
-  margin-top: 10px;
-}
+  #venue-button, #genre-button {
+      margin-bottom: 75px;
+    }
 
-#venue-button, #genre-button {
-    margin-bottom: 75px;
-  }
+  .results-body, .featured-body {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
 
-.results-body, .featured-body {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
 
-/* <<<<<<< events-branch
-  .events-image {
+  /* .events-image {
     max-width: ;
   } */
 
-  /* .carousel.carousel-slider .carousel-item img {
+  .carousel.carousel-slider .carousel-item img {
     width: 100%;
     height: auto;
     position: absolute;
@@ -89,7 +89,7 @@
     display: contain;
   } */
   
-  /* .carousel.carousel-slider .carousel-fixed-item {
+  .carousel.carousel-slider .carousel-fixed-item {
     position: absolute;
     left: 0;
     right: 0;
@@ -107,7 +107,7 @@
   } */
   
   
-  /* .carousel.carousel-slider .carousel-item h2 {
+  .carousel.carousel-slider .carousel-item h2 {
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
@@ -118,9 +118,9 @@
     z-index: 1;
   } */
   
-  /* .carousel.carousel-slider .carousel-item p {
+  .carousel.carousel-slider .carousel-item p {
     font-size: 15px;
-  } */
+  }
 
 #logo {
   margin: 8px;
@@ -150,11 +150,11 @@ body, html {
  
  #map-link {
    color: black;
- }
+ } */
 
 /* ---------HERO BANNER CSS ------------- */
 /* The location page hero image */
-.hero-image {
+#venue-hero-image {
 /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tiesto-uptown.jpg");
 
