@@ -12,20 +12,10 @@ $(document).ready(function(){
       console.log(modal, trigger);
     },
   });
-    // Location page JS
-    $('.slider').slider();
+  
+  $('.slider').slider();
 
 //AUDIO & CAPTION VARIABLES & FUNCTIONS
-
-// $("#playButton1").on("click", function() {
-//   if ($("#songPreview1") !== "playing") {
-//     $("#songPreview1").trigger("play");
-//   }
-//   else if ($("#songPreview1") == "playing") {
-//     $("#songPreview1").trigger("pause");
-//   }
-// });
-
 
 $("#playButton1").on("click", function() {
   $("audio").trigger("pause");
@@ -94,7 +84,9 @@ $("#pauseButton5").on("click", function() {
 
   var bands = {};
 
-      getEvents()
+
+      getEventsByGenre()
+
         .then(events=>{
           var results = events._embedded.events;
           console.log(results);
@@ -111,8 +103,9 @@ $("#pauseButton5").on("click", function() {
             eventObject.image = results[i].images[2].url;
 
             artists.push(eventObject);
-          }
-        
+
+          };
+
 
           displayMusicEvents(artists);
          
@@ -162,7 +155,7 @@ $("#pauseButton5").on("click", function() {
         bandsWithData.forEach(function(eventObject){
 
        var mainCard = $("<div>");
-       mainCard.addClass("col s6 m4");
+       mainCard.addClass("col s12 m4");
 
        var card = $("<div>");
        card.addClass("card events-card");
@@ -189,12 +182,13 @@ $("#pauseButton5").on("click", function() {
         cardContent.append(name);
 
         var dateTime = eventObject.date + " " + eventObject.time;
-        var date = $("<p>").text("Date & Time: " + moment(dateTime).format("LLL"));
+        var date = $("<p>").text(moment(dateTime).format("LLL"));
         cardContent.append(date);
         card.append(cardContent);
 
         console.log(dateTime);
         
+
         var cardReveal = $("<div>");
         cardReveal.addClass("card-reveal");
         var cardRevealSpan = $("<span>").addClass("card-title grey-text text-darken-4");
@@ -235,7 +229,7 @@ $("#pauseButton5").on("click", function() {
       });
 
     };
-
+ 
 
 });
            
