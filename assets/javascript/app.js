@@ -12,20 +12,10 @@ $(document).ready(function(){
       console.log(modal, trigger);
     },
   });
-    // Location page JS
-    $('.slider').slider();
+  
+  $('.slider').slider();
 
 //AUDIO & CAPTION VARIABLES & FUNCTIONS
-
-// $("#playButton1").on("click", function() {
-//   if ($("#songPreview1") !== "playing") {
-//     $("#songPreview1").trigger("play");
-//   }
-//   else if ($("#songPreview1") == "playing") {
-//     $("#songPreview1").trigger("pause");
-//   }
-// });
-
 
 $("#playButton1").on("click", function() {
   $("audio").trigger("pause");
