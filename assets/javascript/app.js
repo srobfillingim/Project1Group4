@@ -84,7 +84,7 @@ $("#pauseButton5").on("click", function() {
 
   var bands = {};
 
-      getEvents()
+      getEventsByGenre()
         .then(events=>{
           var results = events._embedded.events;
           console.log(results);

@@ -1,5 +1,5 @@
 
-    //Filter by Kansas City and Music Segment
+    //Function Filter by Kansas City and Music Segment
     
     function getEvents(city="kansas city"){
     
@@ -10,21 +10,31 @@
  
         });
     }
-
     console.log(getEvents);
-
-    //TO DO: Filter by genre and create onclick event to display results by Genre
-    function getGenre(genreId){
     
-        var queryURL = `https://app.ticketmaster.com/discovery/v2/events.json?genreID&apikey=vnnOldOossqCwb17Oq4wA0TfYfmlmWAa`;
+    //Function Filter by Genre, Kansas City and Music Segment
+    
+    function getEventsByGenre(classificationName="alternative"){
+    
+        var queryURL = `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=${classificationName}&city=kansas+city&segmentName=music&apikey=vnnOldOossqCwb17Oq4wA0TfYfmlmWAa`;
         return $.ajax({
             url: queryURL,
             method: "GET"
  
-        }).then(function(response) {
-        
-            // Printing the entire object to console
-            console.log(response);
+        });
     }
-    )};
+    console.log(getEventsByGenre);
+
+   //Function Filter by Venue, Kansas City and Music Segment
+    function getEventsByVenue(venueId="ZFr9jZA1a1&city"){
+    
+        var queryURL = `https://app.ticketmaster.com/discovery/v2/events.json?venueId=${venueId}&city=kansas+city&segmentName=music&apikey=vnnOldOossqCwb17Oq4wA0TfYfmlmWAa`;
+        return $.ajax({
+            url: queryURL,
+            method: "GET"
+ 
+        });
+    }
+    console.log(getEventsByVenue);
+
 
