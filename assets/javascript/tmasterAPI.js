@@ -12,6 +12,7 @@
         });
     }
     
+    
     // Function to re-renders the HTML to display the appropriate content
     
     // Create AJAX Call for concert information
