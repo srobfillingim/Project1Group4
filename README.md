@@ -1,7 +1,12 @@
-# Project1Group4
-## KC hotSpot
+# KC hotSpot
 
-**Link to project:** 
+##Team Members:
+- Christy St Thomas
+- Lucy Quinn
+- Michael Gloss
+- Samuel Fillingim
+
+**Link to project:** https://srobfillingim.github.io/Project1Group4/
 
 **About**
 
@@ -11,10 +16,15 @@ A responsive web application, KC hotSpot not only allows you to discover when yo
 
 Better yet, KC hotSpot supports homegrown musicians by carefully curating playlists and giving you an eclectic taste of different genres ranging from garage rock to funk-metal to psychedelic pop and simply good old-fashioned rock and roll!
 
+**Why KC hotspot?**
+
 This is a simpler way for people to find upcoming music performances.
 
-With so many search forums out there, including a small, little company called Google (you may have heard of them), you may find yourself going down a rabbit hole of endless options, often times with a ton of noise in the background, derailing you from your pain purpose - finding live music catered to your interests.
+  - Our site is easier and more direct than our competitors
+  - Other sites are very busy and have excessive content to absorb
+  - We keep it straightforward for a positive user experience
+  - We believe a clean and simple design retains customers
 
-KC hotSpot keeps it clean and simple. In fact, you only get two options: where to go and what to listen to. Click a button or two and your hotSpot is determined for you.
+KC hotSpot keeps it clean and simple. In fact, you only get two options: where to go (venue) and what to listen to (genre). Click a button or two and your hotSpot is determined for you.
 
 
