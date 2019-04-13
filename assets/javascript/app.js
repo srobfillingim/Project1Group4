@@ -148,8 +148,9 @@ $("#pauseButton5").on("click", function() {
               });
 
               Promise.all(artistEventsRequests).then(artistEventsResponses=>{
+                console.log(artistEventsResponses);
 
-              });
+              })
             })
             .catch(console.log);
 
