@@ -10,6 +10,18 @@
  
         });
     }
+    
+    
+    // Function to re-renders the HTML to display the appropriate content
+    
+    // Create AJAX Call for concert information
+    
+    // $.ajax({
+    //     url: queryGenreURL,
+    //     method: "GET"
+    // }).then(function(response) {
+    //     console.log(response)
+
 
     console.log(getEvents);
 

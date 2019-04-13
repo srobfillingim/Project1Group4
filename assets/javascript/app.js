@@ -84,6 +84,8 @@ $("#pauseButton5").on("click", function() {
 
   var bands = {};
 
+
+
       getEvents()
         .then(events=>{
           var results = events._embedded.events;
@@ -101,8 +103,7 @@ $("#pauseButton5").on("click", function() {
             eventObject.image = results[i].images[2].url;
 
             artists.push(eventObject);
-          }
-        
+
 
           displayMusicEvents(artists);
          
@@ -177,6 +178,12 @@ $("#pauseButton5").on("click", function() {
         name.append(iClass);
         cardContent.append(name);
 
+        var dateTime = moment(eventObject.date).format("LL") + " " + moment(eventObject.time).format("HH:mm");
+        var date = $("<p>").text("Date & Time: " + dateTime);
+        cardContent.append(date);
+        card.append(cardContent);
+        console.log(eventObject);
+
         var dateTime = eventObject.date + " " + eventObject.time;
         var date = $("<p>").text(moment(dateTime).format("LLL"));
         cardContent.append(date);
@@ -184,6 +191,7 @@ $("#pauseButton5").on("click", function() {
 
         console.log(dateTime);
         
+
         var cardReveal = $("<div>");
         cardReveal.addClass("card-reveal");
         var cardRevealSpan = $("<span>").addClass("card-title grey-text text-darken-4");
@@ -224,7 +232,7 @@ $("#pauseButton5").on("click", function() {
       });
 
     };
-
+ 
 
 });
            
