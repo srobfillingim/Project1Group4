@@ -16,7 +16,7 @@
     
     function getEventsByGenre(classificationName="alternative"){
     
-        var queryURL = `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=${classificationName}&city=kansas+city&segmentName=music&apikey=vnnOldOossqCwb17Oq4wA0TfYfmlmWAa`;
+        var queryURL = `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=${classificationName}&city=kansas+city&segmentName=music&sort=date,asc&apikey=vnnOldOossqCwb17Oq4wA0TfYfmlmWAa`;
         return $.ajax({
             url: queryURL,
             method: "GET"
@@ -28,7 +28,7 @@
    //Function Filter by Venue, Kansas City and Music Segment
     function getEventsByVenue(venueId="ZFr9jZA1a1&city"){
     
-        var queryURL = `https://app.ticketmaster.com/discovery/v2/events.json?venueId=${venueId}&city=kansas+city&segmentName=music&apikey=vnnOldOossqCwb17Oq4wA0TfYfmlmWAa`;
+        var queryURL = `https://app.ticketmaster.com/discovery/v2/events.json?venueId=${venueId}&city=kansas+city&segmentName=music&sort=date,asc&apikey=vnnOldOossqCwb17Oq4wA0TfYfmlmWAa`;
         return $.ajax({
             url: queryURL,
             method: "GET"
