@@ -10,7 +10,21 @@
  
         });
     }
+
     console.log(getEvents);
+=======
+    
+    
+    // Function to re-renders the HTML to display the appropriate content
+    
+    // Create AJAX Call for concert information
+    
+    // $.ajax({
+    //     url: queryGenreURL,
+    //     method: "GET"
+    // }).then(function(response) {
+    //     console.log(response)
+
 
     //TO DO: Filter by genre and create onclick event to display results by Genre
     function getGenre(genreId){

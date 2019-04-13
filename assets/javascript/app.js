@@ -36,10 +36,32 @@ $("#pauseButton2").on("click", function() {
 $("#playButton3").on("click", function() {
   $("audio").trigger("pause");
   $("#songPreview3").trigger("play");
+
+});
+$("#pauseButton3").on("click", function() {
+  $("#songPreview3").trigger("pause");
+
 });
 $("#pauseButton3").on("click", function() {
   $("#songPreview3").trigger("pause");
 });
+
+$("#playButton4").on("click", function() {
+  $("audio").trigger("pause");
+  $("#songPreview4").trigger("play");
+});
+$("#pauseButton4").on("click", function() {
+  $("#songPreview4").trigger("pause");
+});
+
+$("#playButton5").on("click", function() {
+  $("audio").trigger("pause");
+  $("#songPreview5").trigger("play");
+});
+$("#pauseButton5").on("click", function() {
+  $("#songPreview5").trigger("pause");
+});
+
 
 $("#playButton4").on("click", function() {
   $("audio").trigger("pause");
@@ -80,8 +102,7 @@ $("#pauseButton5").on("click", function() {
 
             artists.push(eventObject);
           }
-          
-
+        
 
           displayMusicEvents(artists);
          
@@ -157,11 +178,11 @@ $("#pauseButton5").on("click", function() {
         cardContent.append(name);
 
         var dateTime = eventObject.date + " " + eventObject.time;
-        var date = $("<p>").text("Date & Time: " + dateTime);
+        var date = $("<p>").text("Date & Time: " + moment(dateTime).format("LLL"));
         cardContent.append(date);
         card.append(cardContent);
 
-        console.log()
+        console.log(dateTime);
         
         var cardReveal = $("<div>");
         cardReveal.addClass("card-reveal");
@@ -179,8 +200,9 @@ $("#pauseButton5").on("click", function() {
         cardReveal.append(pName);
 
         var dateTime = eventObject.date + " " + eventObject.time;
-        var pDateTime = $("<p>").text(dateTime);
+        var pDateTime = $("<p>").text(moment(dateTime).format("LLL"));
         cardReveal.append(pDateTime);
+        
 
         var venueName = eventObject.venuename;
         var pVenueName = $("<p>").text(venueName);
