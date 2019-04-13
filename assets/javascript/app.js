@@ -180,12 +180,6 @@ $("#pauseButton5").on("click", function() {
         name.append(iClass);
         cardContent.append(name);
 
-        var dateTime = moment(eventObject.date).format("LL") + " " + moment(eventObject.time).format("HH:mm");
-        var date = $("<p>").text("Date & Time: " + dateTime);
-        cardContent.append(date);
-        card.append(cardContent);
-        console.log(eventObject);
-
         var dateTime = eventObject.date + " " + eventObject.time;
         var date = $("<p>").text(moment(dateTime).format("LLL"));
         cardContent.append(date);
