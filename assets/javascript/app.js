@@ -12,20 +12,10 @@ $(document).ready(function(){
       console.log(modal, trigger);
     },
   });
-    // Location page JS
-    $('.slider').slider();
+  
+  $('.slider').slider();
 
 //AUDIO & CAPTION VARIABLES & FUNCTIONS
-
-// $("#playButton1").on("click", function() {
-//   if ($("#songPreview1") !== "playing") {
-//     $("#songPreview1").trigger("play");
-//   }
-//   else if ($("#songPreview1") == "playing") {
-//     $("#songPreview1").trigger("pause");
-//   }
-// });
-
 
 $("#playButton1").on("click", function() {
   $("audio").trigger("pause");
@@ -114,10 +104,6 @@ $("#pauseButton5").on("click", function() {
 
             artists.push(eventObject);
 
-          };
-        
-
-          
 
           displayMusicEvents(artists);
          
@@ -166,7 +152,7 @@ $("#pauseButton5").on("click", function() {
         bandsWithData.forEach(function(eventObject){
 
        var mainCard = $("<div>");
-       mainCard.addClass("col s6 m4");
+       mainCard.addClass("col s12 m4");
 
        var card = $("<div>");
        card.addClass("card events-card");
@@ -197,6 +183,15 @@ $("#pauseButton5").on("click", function() {
         cardContent.append(date);
         card.append(cardContent);
         console.log(eventObject);
+
+        var dateTime = eventObject.date + " " + eventObject.time;
+        var date = $("<p>").text(moment(dateTime).format("LLL"));
+        cardContent.append(date);
+        card.append(cardContent);
+
+        console.log(dateTime);
+        
+
         var cardReveal = $("<div>");
         cardReveal.addClass("card-reveal");
         var cardRevealSpan = $("<span>").addClass("card-title grey-text text-darken-4");
@@ -213,8 +208,9 @@ $("#pauseButton5").on("click", function() {
         cardReveal.append(pName);
 
         var dateTime = eventObject.date + " " + eventObject.time;
-        var pDateTime = $("<p>").text(dateTime);
+        var pDateTime = $("<p>").text(moment(dateTime).format("LLL"));
         cardReveal.append(pDateTime);
+        
 
         var venueName = eventObject.venuename;
         var pVenueName = $("<p>").text(venueName);
