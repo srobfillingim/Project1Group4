@@ -87,10 +87,6 @@ $("#pauseButton5").on("click", function() {
 
       getEventsByGenre()
 
-
-
-      getEvents()
-
         .then(events=>{
           var results = events._embedded.events;
           console.log(results);
@@ -107,6 +103,8 @@ $("#pauseButton5").on("click", function() {
             eventObject.image = results[i].images[2].url;
 
             artists.push(eventObject);
+
+          };
 
 
           displayMusicEvents(artists);
