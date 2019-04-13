@@ -210,7 +210,7 @@ $("#pauseButton5").on("click", function() {
         cardReveal.append(pName);
 
         var dateTime = eventObject.date + " " + eventObject.time;
-        var pDateTime = $("<p>").text(dateTime);
+        var pDateTime = $("<p>").text(moment(dateTime).format("LLL"));
         cardReveal.append(pDateTime);
         
 
