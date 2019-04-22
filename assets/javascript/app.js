@@ -62,30 +62,22 @@ $("#pauseButton5").on("click", function() {
   $("#songPreview5").trigger("pause");
 });
 
+//Click Events
+  //want to get actual genre that was clicked 
+  //set up onclick event handler on each class using data-attribute
 
-$("#playButton4").on("click", function() {
-  $("audio").trigger("pause");
-  $("#songPreview4").trigger("play");
-});
-$("#pauseButton4").on("click", function() {
-  $("#songPreview4").trigger("pause");
-});
-
-$("#playButton5").on("click", function() {
-  $("audio").trigger("pause");
-  $("#songPreview5").trigger("play");
-});
-$("#pauseButton5").on("click", function() {
-  $("#songPreview5").trigger("pause");
-});
-
+$(document).on("click", ".click-genre", function() {
+  const data = $(this).attr("data-genre");
+  localStorage.setItem('genre', data);
+  window.location.href = "events.html";
+})
 
 //API FUNCTIONS
+  //once get genre, store in local storage in console
 
   var bands = {};
-
-
-      getEventsByGenre()
+  var genre = localStorage.getItem("genre")
+      getEventsByGenre(genre)
 
         .then(events=>{
           var results = events._embedded.events;
@@ -155,7 +147,7 @@ $("#pauseButton5").on("click", function() {
         bandsWithData.forEach(function(eventObject){
 
        var mainCard = $("<div>");
-       mainCard.addClass("col s12 m4");
+       mainCard.addClass("col s12 m6 l4 main-card");
 
        var card = $("<div>");
        card.addClass("card events-card");

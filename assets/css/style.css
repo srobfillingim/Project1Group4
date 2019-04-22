@@ -65,7 +65,12 @@
       margin-bottom: 75px;
     }
 
-  .results-body, .featured-body {
+  .featured-body {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .results-body {
       margin-left: 20px;
       margin-right: 20px;
     }
@@ -202,4 +207,26 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 color: white;
+}
+
+/* #modal-see-events {
+  float: right;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+} */
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+
+/* .collection .collection-item.avatar .secondary-content {
+  position: block; */
+
+  /* #modal-see-events {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+  } */
+
 }

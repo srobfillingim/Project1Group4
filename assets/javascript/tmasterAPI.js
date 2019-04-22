@@ -14,7 +14,7 @@
     
     //Function Filter by Genre, Kansas City and Music Segment
     
-    function getEventsByGenre(classificationName="alternative"){
+    function getEventsByGenre(classificationName){
     
         var queryURL = `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=${classificationName}&city=kansas+city&segmentName=music&sort=date,asc&apikey=vnnOldOossqCwb17Oq4wA0TfYfmlmWAa`;
         return $.ajax({
