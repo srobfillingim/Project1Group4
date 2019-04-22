@@ -1,6 +1,6 @@
 # KC hotSpot
 
-##Team Members:
+## Team Members:
 - Christy St Thomas
 - Lucy Quinn
 - Michael Gloss
