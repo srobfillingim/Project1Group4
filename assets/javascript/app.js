@@ -14,6 +14,7 @@ $(document).ready(function(){
   });
   
   $('.slider').slider();
+  $('.sidenav').sidenav();
 
 //AUDIO & CAPTION VARIABLES & FUNCTIONS
 
