@@ -3,7 +3,7 @@
 ## Team Members:
 - Christy St Thomas
 - Lucy Quinn
-- Michael Gloss
+- Michael Glosser
 - Samuel Fillingim
 
 **Link to project:** https://srobfillingim.github.io/Project1Group4/
