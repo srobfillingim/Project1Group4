@@ -27,4 +27,8 @@ This is a simpler way for people to find upcoming music performances.
 
 KC hotSpot keeps it clean and simple. In fact, you only get two options: where to go (venue) and what to listen to (genre). Click a button or two and your hotSpot is determined for you.
 
+![Image of KChotspot](assets/images/KChotspot5.png)
+![Image of KChotspot](assets/images/KChotspot3.png)
+![Image of KChotspot](assets/images/KChotspot4.png)
+
 
